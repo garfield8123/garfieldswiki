@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Microsoft Entra Identity - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Microsoft Entra Identity";
+        var mkdocs_page_input_path = "Window Server/IdentityMicrosoftentra.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Microsoft Entra Identity</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#identity-landscape">Identity landscape</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zero-trust-principles">Zero Trust Principles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zero-turst-solutions">Zero Turst Solutions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zero-trust-architecture">Zero Trust Architecture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#control-plane">Control Plane</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-provides-aaaa">Identity Provides AAAA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-provider-idp">Identity Provider (IdP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#common-identity-protcols">Common Identity Protcols</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-administration">Identity Administration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-administration-provides">Identity Administration Provides</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-administration-tasks">Identity administration tasks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-management-automation">Identity Management Automation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-user">Create User</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-graph">Microsoft Graph</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#centralized-identity-management-or-central-identity-system">Centralized Identity Management or Central Identity System</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deentralized-identity">Deentralized Identity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#decentralized-identity-components">Decentralized Identity Components</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-and-access-management-iam">Identity and Access Management (IAM)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-id-terminology">Microsoft Entra ID Terminology</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-external-identities">Microsoft Entra External Identities</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#type-of-business-to-business-b2b">Type of Business to Business (B2B)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-business-to-consumer-b2c-customer-identity-access-management-ciam">Microsoft Entra Business to Consumer (B2C) (Customer Identity Access Management (CIAM))</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-identity-providers-idp">Microsoft Identity Providers (IdP)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-providers-in-microsoft-azure">Identity providers in Microsoft Azure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-licensing">Identity Licensing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#licenses">Licenses</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#authorization">Authorization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#authorization-concept">Authorization concept</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#authorization-approaches">Authorization approaches</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#auditing-in-identity">Auditing in Identity</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#goverance">Goverance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#identity-lifecycle-management">Identity lifecycle management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#management-strategy">Management strategy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#monitoring-tools">Monitoring tools</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Window Server</li>
+      <li class="breadcrumb-item active">Microsoft Entra Identity</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="microsoft-entra-identity">Microsoft Entra Identity</h1>
+<h2 id="identity-landscape">Identity landscape</h2>
+<ul>
+<li>Zero Trust</li>
+<li>Verify Expliciblity</li>
+<li>Use Least Privileges</li>
+<li>Assume Breach</li>
+<li>Identity</li>
+<li>Business to Business (B2B)</li>
+<li>Business to Consumer (B2C)</li>
+<li>Verifiable Credentials</li>
+<li>Decentralize Providers</li>
+<li>Actions</li>
+<li>Authenticate - Prove - AuthN</li>
+<li>Authorize - Get - AuthZ</li>
+<li>Administer - Configure</li>
+<li>Audit - Report</li>
+<li>Usage</li>
+<li>Access applications and data</li>
+<li>Secure - Cryptography</li>
+<li>Dollars - Licenses</li>
+<li>Maintain</li>
+<li>
+<p>Protect - Detect - Respond</p>
+</li>
+<li>
+<p>Always think and design with zero trust. Don't give access to data and applications becuase the user had access previously. (always confirm)</p>
+</li>
+<li>Systems provide verified accounts for users and applications. Identify services from Microsoft Entra ID, business to business federation, business to customer, and decentralized identity providers</li>
+<li>Specific actions identify providers. Users and application can authenticate and authorize to gain access. Administrators need to maintain the identity of systems</li>
+<li>Many actions can be performed once credentials are verified</li>
+<li>Always keep systems up to date</li>
+</ul>
+<p>Class Identity: Restrict everything to a secure network
+Zero trust Identity: protect assets anywhere with a central policy</p>
+<h2 id="zero-trust-principles">Zero Trust Principles</h2>
+<ul>
+<li>Verify Explicibility -&gt; Indicate all available data points including:</li>
+<li>user identity &amp; location</li>
+<li>device health</li>
+<li>service or workload context</li>
+<li>data classification</li>
+<li>anomalies</li>
+<li>Least privileged access -&gt; Secure both data and productivity limit user access:</li>
+<li>Just in time (JIT)</li>
+<li>Just Enough Access (JEA)</li>
+<li>Risk based adaptive policies</li>
+<li>data protection against out-of band vectors</li>
+<li>Assume Breach -&gt; Minimize blast radius and prevent lateral movement:</li>
+<li>segmenting access by network, user, devices, and app awareness</li>
+<li>Encrypting all sessions end to end</li>
+<li>analysis for threat detection, posture, visibility, and improving defenses</li>
+</ul>
+<h2 id="zero-turst-solutions">Zero Turst Solutions</h2>
+<ul>
+<li>Identity, Endpoints, Data, Apps, Infrastrucutre, networks</li>
+</ul>
+<h2 id="zero-trust-architecture">Zero Trust Architecture</h2>
+<p><img alt="zero trust Architecture" src="../../images/zero-trust-architecture.png" /></p>
+<h2 id="control-plane">Control Plane</h2>
+<p>Part of a network that routes network traffic around the network architecture. Tool or service that directs access to resources based on specific criteria. (Identity)</p>
+<h2 id="identity-provides-aaaa">Identity Provides AAAA</h2>
+<ul>
+<li>Athentication:</li>
+<li>User sign on experience</li>
+<li>Trusted source(s)</li>
+<li>Federative protocols</li>
+<li>Level of assurance</li>
+<li>Authrization</li>
+<li>User sign on experience</li>
+<li>Can a user access the resource</li>
+<li>what can they do when they have access?</li>
+<li>Administration</li>
+<li>Single view management</li>
+<li>Application of business rules</li>
+<li>Automated requests, approvals, and access assignment</li>
+<li>Entitlement management</li>
+<li>Auditing</li>
+<li>Track who does what, when, where, and how</li>
+<li>Focused auditing</li>
+<li>In-depth collated reporting</li>
+<li>Governance &amp; Compliance</li>
+</ul>
+<h2 id="identity-provider-idp">Identity Provider (IdP)</h2>
+<p>System that creates, manages, and stores digital identities (Microsoft Entra ID)</p>
+<ul>
+<li>Common Components</li>
+<li>Repistoriory of user identities</li>
+<li>Authentication system</li>
+<li>Security protocol that defined against intrusion</li>
+<li>Someone we trust</li>
+</ul>
+<h2 id="common-identity-protcols">Common Identity Protcols</h2>
+<ul>
+<li>OpenID provider (Open ID Connect (OIDC)): Authentication protcol based on OAuth2 protocol (used for authorization). OIDC uses standard message flows with OAuth2 to provide identity with system entity (OpenID-Provider) issues JSON format identity tokens to OIDC relying parties via rest HTTP API</li>
+<li>SAML Identity Provider (Security Assertion Markup Language (SAML)): Open standard for exchanging authentication and authorization data between identity and service provider. An XML based markup language for security assertions, statements that service providers use to make access control decisions</li>
+</ul>
+<h2 id="identity-administration">Identity Administration</h2>
+<p>How identity objects managed over the lifetime of the identity's existence. This administration can be manual or automated.</p>
+<h2 id="identity-administration-provides">Identity Administration Provides</h2>
+<ul>
+<li>System that is highly configurable around business processes</li>
+<li>Agility to scale resources according to demand</li>
+<li>Cost savings through the distribution and automation of management</li>
+<li>Flexibility around synchronization, profileration, and change control</li>
+</ul>
+<h2 id="identity-administration-tasks">Identity administration tasks</h2>
+<ul>
+<li>Identity proliferation: Deals with storage of identity objects within the environment. Active Directory, other directory services, and application specific identity stores</li>
+<li>Provision and deprovision: Two separate capabilities, Provisioning speaks towards how identiy objects are created within a system (Deletion, disablement of seucrity principle or removal of access)</li>
+<li>Identity Updates: Surrounds how identity information is updated throughout the environment. Move away from manual effort to more automated and streamlined approach</li>
+<li>Synchronization: Ensuring the identity systems within an environment are up to date with the latest identity information. Key things that influenece this capability are how synchronization is performed manual, time-based or event driven</li>
+<li>Password Management: Focuses on where and how passwords are set throughout the identity infrastructure.</li>
+<li>Group Management: Focuses on how organization manages groups (Active Directory and/or LDAP) within their environment. Groups of the most common form for determining access permissions to resources and are expensive to manage and operate</li>
+<li>Application Entitlement Management: Defines how identities are granted access to applications. Focuses on providing coarse-gained application enetitlements that are enforced as a capability contained with the authorization pillar.</li>
+<li>User Interface: How the end user is able to request, or make, updates to their identity information. Users continue to contact the service Desk for any updates to their identity information</li>
+<li>Change Control: Capability focuses on how changes flow through the environment whether manually completed by a Service Desk professional. There can be automation with or without workflow, which drives the change process.</li>
+</ul>
+<h2 id="identity-management-automation">Identity Management Automation</h2>
+<ul>
+<li>Powershell</li>
+<li>Cross platform powershell Runs on Windows, macOS, Linux</li>
+<li>Requires Windows PowerShell or PowerShell</li>
+<li>CLI (Command Line Interface)</li>
+<li>Cross Platform command-line interface, installable on Windows, macOS, Linux</li>
+<li>Runs in Windows PowerShell, Command Prompt, or Bash and other Unix Shells</li>
+</ul>
+<h2 id="create-user">Create User</h2>
+<ul>
+<li>Azure CLI Create User</li>
+</ul>
+<pre><code class="language-powershell">ax ad user create --display-name &quot;New User&quot; --password &quot;Password&quot; --user-principal-name NewUser@contoso.com
+</code></pre>
+<ul>
+<li>Microsoft Graph Create user</li>
+</ul>
+<pre><code class="language-powershell">New-MgUser -DisplayName &quot;New User&quot; -PasswordProfile Password -UserPrincipalName &quot;NewUser@contoso.com&quot; -AccountEnabled $true -MailNickName &quot;Newuser&quot;
+</code></pre>
+<h2 id="microsoft-graph">Microsoft Graph</h2>
+<p>Exposes Rest APIs and client libraries to access data on the following Microsoft Cloud Services like Microsoft Entra ID, Microsoft 365, devices</p>
+<ul>
+<li>Single endpoint <a href="https://graph.microsoft.com">wesite location</a> to provide access to rich, people-centric data and insights in Microsot Cloud, Microsoft 365, Windows 10, Enterprise Mobility + Security.</li>
+<li>Microsoft Graph Connectors Work in the incoming direction, delivering data external to the Microsoft Cloud into Microsoft Graph Services and applications, to enhance Microsoft 365 experiences such as Microsoft Search. Used data sources such as Box, Google Drive, Jira, and Salesforce</li>
+<li>Microsoft graph data connnect provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure Data stores. The cached data serves as data sources for Azure development tools that you can use to build intelligent applications.</li>
+</ul>
+<h2 id="centralized-identity-management-or-central-identity-system">Centralized Identity Management or Central Identity System</h2>
+<p>Single identity tool where credentials are stored and managed, to provide authentication and authorization capabilities. System can be on-premises or cloud-based. Centrally managed by an indentity authority or administrator</p>
+<p>Microsoft Entra ID</p>
+<ul>
+<li>Credentials are verified when stored</li>
+<li>Management is by single authority</li>
+<li>Admin or Admin group</li>
+<li>
+<p>Used for identity and access management</p>
+</li>
+<li>
+<p>Secure adaptive access: Protect access to resources and data using strong authentication and risk-based adaptive access policies without compromising user experience</p>
+</li>
+<li>Seamless user experience: Provide an easy, fast sign-in experience to keep your users productive, reduce time managing passwords, and increase end-user productivity</li>
+<li>Unified Identity management: Manage all your identities and access to all your apps in a central location, whether they're in the cloud or on-premises, to improve visibility and control</li>
+<li>Simplified Identity governance: Control access to apps and data for all users and admins efficiently with automated identity governance to ensure only authorized users have access</li>
+</ul>
+<h2 id="deentralized-identity">Deentralized Identity</h2>
+<p>Helps people, organizations, and tings interact with each other transparently and secrely, in an identity trust fabric. People control their own digital identity and credentials.</p>
+<ul>
+<li>Decentralized Identifiers (DIDs): User-generated, self-owned, globally unique identifiers rooted in decentralized systems. Possess unique characteristics, like greature assurance of immutability, censorhip reistance, and tamper evasiveness</li>
+</ul>
+<p>Download a DID User Agent App. Trusted user agent helps you navigate the web, a DID User Agent helps you manage all aspects of DIDs -- creation of identifiers, authentication, data encryption, and management of keys and permissions.</p>
+<p>DID implementations should use decentralized systems strictly to anchor identifiers and non-PLL DPKI metadata to enable routing and authentication for the DID owner without risk of censorship</p>
+<h2 id="decentralized-identity-components">Decentralized Identity Components</h2>
+<ul>
+<li>W3C Centralized Identifiers (DIDs): IDs users create, own, and control independently of any organization or government. DIDs are globally unique identifiers linked to Decentralized Public Key Infrastructure (DPKI) metadata composed of JSON documents that contain public  key material, authentication descriptors, and service endpoints</li>
+<li>Decentralized Systems (Blockchains and ledgers): DIDs are rooted in decentralized systems that provide the meahnism and features required for PDKI.</li>
+<li>DID User Agents: Applications that enable real people to use decentralized identities. Aid in creating DIDs, manging data and permissions, and signing/validating DID-linked claims.</li>
+<li>DIF Universal Resolver: Srrver that utilizes a collection of DID drivers to provide a standard means of lookup and resolution for DIDs across impemtnations and decntralized systems and that returns the DID Document Object (DDO) that encapsulated DPKI metadata associated with a DID</li>
+<li>DIF Idnentity Hubs: Replicated mesh of encrypted personal datastores, composed of cloud and edge instances, that facilitate identity data storage and identity interactions</li>
+<li>DID Attestations: DID signed attestations are based on standard formats and protcols. They enable identity owners to generate, present, and verify claims. The beginning of trust between users of the system</li>
+<li>Decentralized apps and services. DIDs paired with identity Hub personal datasotres enable the creation of a new class of apps and services. They store data with the user's identity Hub and oeprate with the confines of the permissions they're granted</li>
+</ul>
+<h2 id="identity-and-access-management-iam">Identity and Access Management (IAM)</h2>
+<p>An Identity solution controls access to an organization's apps and data. Users, devices, and applications have identities. IAM components support the authentication and authorization of these and other identies. Process of autehntication controls who or what uses an account. Authorization controls what that user can do in applications (Microsoft Entra ID)</p>
+<p><img alt="Basic Identity Architecture" src="../../images/identity-basic-architecture.png" /></p>
+<h2 id="microsoft-entra-id-terminology">Microsoft Entra ID Terminology</h2>
+<ul>
+<li>Identity: An object that can be autehtnicated. An identity can be a user with a username nad password. Identities also include applications or otehr servers that might require authentication through secret keys or credentials</li>
+<li>Account: An identity that has data associated with it. You can't have an account without an identity</li>
+<li>Microsoft Entra Account: An identity created through Microsoft Entra ID or another Microsoft Cloud Service, such as Microsoft 365. Identies are stored in Microsoft Entra ID and accessible to your organization's cloud service subscriptions. This account is also sometimes called a work or school account</li>
+<li>User: A single personal verifiable identity in Microsoft Entra ID</li>
+<li>Group: A container of users or identities that can be asigned security privileges or restrictions. Often used to control access to speific shared resource to a set of accounts instead of assigning individually</li>
+<li>Azure Subscription: Used to pay for Azure Cloud services. You can have many subscriptions and they're linked to a credit card</li>
+<li>Microsoft Entra tenant/directory: Dedicated and trusted instance of Microsoft Entra ID, a tenant is automatically created when your organizations signs up a Microsoft Cloud Service Subscription.</li>
+<li>More instances of Microsoft Entra ID can be created. Entra ID is the underlying product providing the identity service. The term Tenant means  asingle instance of Microsoft Entra ID representing a single organization. The terms Tenant and Diretory can be used interchangeably</li>
+<li>Administrative Unit: A portioned off piece of a Microsoft Entra tenant used to create and administrative boundary</li>
+</ul>
+<h2 id="microsoft-entra-external-identities">Microsoft Entra External Identities</h2>
+<p>Refers to all the ways you can secureley interact with users outside of your organization if you want to collaborate with partners, distribbutors, suppliers, or vendors, you can share your resources and define how your internal users can access external organizations.</p>
+<h2 id="type-of-business-to-business-b2b">Type of Business to Business (B2B)</h2>
+<ul>
+<li>B2B collaboration: Collaborate with external users by letting them use their preferred identity to sign in to your Microsoft applications or other enterprise applications (SaaS app, custom-developed apps, etc.) B2B collaboration users are represented in your directory, typically as guest users</li>
+<li>B2B Direct Connect: Establish a mutual, two-way trust with another Microsoft Entra organization for seamless collaboration. B2B direct connect currently supports Teams shared channels, enabling external users to access your resources from within their home instances of teams. B2B direct connect users aren't represented in your directory, but they're visible from within the Teams shared channel and can be monitored in Teams admin center reports.</li>
+</ul>
+<h2 id="microsoft-entra-business-to-consumer-b2c-customer-identity-access-management-ciam">Microsoft Entra Business to Consumer (B2C) (Customer Identity Access Management (CIAM))</h2>
+<p>Solution capable of supporting millions of users and billions of authentications per day. Takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks. Separate service from Microsoft Entra ID, allows businesses to build customer facing appliacations, and then allow anyone to sign up into those applications with no restrictions on user account</p>
+<h2 id="microsoft-identity-providers-idp">Microsoft Identity Providers (IdP)</h2>
+<p>System that creates, manages, and stores digital identies.</p>
+<ul>
+<li>Three most common components</li>
+<li>A Repository of user identies</li>
+<li>An authentication system</li>
+<li>Security protocols that defend against intrusion</li>
+</ul>
+<h2 id="identity-providers-in-microsoft-azure">Identity providers in Microsoft Azure</h2>
+<ul>
+<li>Microsoft Entra Domain Services: Provides managed domain services with a subset of fully compatible traditional AD DS features such as domain join, group policy, LDAP, and kerberos/NTLM Authentication</li>
+<li>AD DS: Enterprise ready LDAP server that provides key features such as identity and authentication, computer object management, group policy, and trusts</li>
+<li>AD DS: Central component in many organizations with an on-premises IT environment, and provides core user account authentication and computer management features</li>
+<li>Microsoft Entra ID: Cloud-based identity and mobile device management that provides user account and authentication services for resources such as Microsoft 365, the Azure Portal, or SaaS applications</li>
+<li>Microsoft Entra ID: Can be synchronized with an on-premises AD DS environment to provide a single identity to users that work natively in the cloud.</li>
+<li>Active Directory Domain Services: Enterprise-ready lightweight directory access protocol (LDAP) server that provides key features such as identity and authentication, computer object management, group policy, and trusts</li>
+<li>Entra Domain Services: Provides managed domain services with a subset fully compatiable traditional AD DS features such as domain join, group policy, LDAP, and kerberos/NTLM authentication</li>
+<li>Entra DS: integrates with Entra ID, which itself can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy</li>
+</ul>
+<h2 id="identity-licensing">Identity Licensing</h2>
+<ul>
+<li>Microsoft Entra ID P1 or P2 License: License allows you to purhcase access to the more features in Microsoft Entra ID. You need a Microsoft Entra ID P2 license if you want to use privileged Identity Management (PMI) capability in Microsoft Entra ID. Any user that assigns or manages assignments in PIM needs to have a license. A User within privileged user doesn't need a license</li>
+<li>Microsoft 365, Office 365, Windows License: License assigned to Microsoft Entra user or group to grant themm access to use Office or Windows products. You need one license for each user who needs access to Windows and/or Office</li>
+<li>Monthly Active User (MAU) License: License used with Microsoft Entra External Identities. A monthly report pulled for billing purposes, looking for external users logging in during the month</li>
+</ul>
+<h2 id="licenses">Licenses</h2>
+<table>
+<thead>
+<tr>
+<th>License</th>
+<th>Monthly Active User (MAU) Billing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>purchased agreement to allow users or guests to use a Microsoft technology</td>
+<td>Pricing model for external users in Microsoft Entra ID</td>
+</tr>
+<tr>
+<td>Common SKUs/Licenses</td>
+<td>MAU billing available when you have a subscrption</td>
+</tr>
+<tr>
+<td>Microsoft Entra ID P1 or P2 License</td>
+<td>Report of active users runs each month for billing</td>
+</tr>
+<tr>
+<td>Microsoft 365 / Office 365 License</td>
+<td>First 50,000 MAUs free monthly (P1 and P2)</td>
+</tr>
+<tr>
+<td>Windows License</td>
+<td>Helps establish predictable pricing</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Subscription: An agreement with Microsoft to use one or more Microsoft cloud platforms or services for which charages accure based on either a per user or a cloud-based resource consumption. Microsoft's Software as a Service (SaaS)-based cloud offerings (Microsoft 365 and Dynamics 365) charge per-user license fees. Microsoft's Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) cloud offerings (Azure) charge based on cloud resource consumption. You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription. Organizations can have multiple subscriptions for Microsoft's cloud offerings.</li>
+<li>License: For Microsoft's SaaS cloud offerings, a license allows a specific user account to use the services of the cloud offering. You're charged a fixed monthly fee as part of your subscription. Administrators assign licenses to individual user accounts in the subscription.</li>
+</ul>
+<h2 id="authorization">Authorization</h2>
+<p>Covers what an identity can access and what are they allowed to do once they gain access identity authorization provides:</p>
+<ul>
+<li>Methods of assigning entitlement allowing for increased security and less administration</li>
+<li>Ability to manage policy control</li>
+<li>Simplify enforcement by standardizing on a common approach</li>
+</ul>
+<h2 id="authorization-concept">Authorization concept</h2>
+<ul>
+<li>Entitlement Type: Entitlements focus on whether or not an identity has been granted (“entitled”) access to a particular resource. As such, entitlements are handled using many different types. The assignment of entitlements happens at the application level, centrally via groups, defined through role based access control or attributes (ABAC) or applied centrally using a policy based (PBAC) approach.</li>
+<li>Access Policies: Focus on set of applications, data, and which users and groups can perform activities. Set of rules around getting your job done. Least access needed</li>
+<li>
+<p>Enforcement: The enforcement capability focuses on how an organization handles the enforcement of authorization activities. In most cases, organizations handle enforcement at the application layer. Meaning enforcement is completed by an API within the application itself. Some forms of enforcement consist of the use a reverse proxy (such as UAG) to externalize authorization enforcement. A current trend is to use an external policy source (such as XACML) to determine how the identity interacts with the resource.</p>
+</li>
+<li>
+<p>Authorization (AuthZ): Set permissions that are used to elevate access to resources or functionality</p>
+</li>
+<li>Authentication (AuthN): proving that an entity like a user or service is indeed who they claim to be</li>
+</ul>
+<h2 id="authorization-approaches">Authorization approaches</h2>
+<ul>
+<li>Access Control Lists (ACL): Explicit list of specific entities who do or don't have access to a resource or functionality. Offers fine control over resources, but difficult to maintain large groups of users and resources</li>
+<li>Role based Access control (RBAC): Roles are defined to describe the kinds of activities an entity can perform. Grant access to roles rather than to individual entities. An administrator can then assign roles to different entities to control which ones have access to what resources and functionality.</li>
+<li>Attribute-based Access Control (ABAC): Rules are applied to attributes of the entity, the resources being accessed, and the current environment to determine whether access to some resources or functionality is permitted. An example might be only allowing users who are managers to access files identified with a metadata tag of “managers during working hours only” during the hours of 9AM - 5PM on working days. In this case, access is determined by examining the user’s attribute (status as manager), the resource’s attribute (metadata tag on a file), and also an environment attribute (the current time).</li>
+<li>Policy-based Access Control (PBAC): A strategy for managing user access to one or more systems, where the business-role of the user is combined with policies to determine what access the user has.</li>
+<li>Authentication Context: These applications can be your own custom applications, custom line of business (LOB) applications, applications like SharePoint, or applications protected by Microsoft Defender for Cloud Apps. For example, an organization can keep files in SharePoint sites like the lunch menu or their secret BBQ sauce recipe. Everyone has access to the lunch menu site. However, users who have access to the secret BBQ sauce recipe site are required to connect from a managed device.</li>
+</ul>
+<h2 id="auditing-in-identity">Auditing in Identity</h2>
+<p>Auditing provides a way for an administrator to detect an attack that has already occurred or is in progress. Also, auditing is a tool for compliance and tracking what identity did what. In addition, auditing can help a developer to debug security-related problems. For example, if an error in the configuration of the authorization or checking policy accidentally denies access to an authorized user, a developer can quickly discover and isolate the cause of this error by examining the event log.</p>
+<h2 id="goverance">Goverance</h2>
+<p>governance is the act or process of overseeing the control and direction of a system. That system could be a government, a budget, or an identity solution on Azure. Governance has processes and controls in place to both operate the systems and to evaluate the accountable running of the system. It's never enough to build a solution and then forget it. You have to monitor its running, update the processes regularly, remove or replace outdated features, and so on. If you don't, the system is slowly going to degrade and fail.</p>
+<h2 id="identity-lifecycle-management">Identity lifecycle management</h2>
+<p>Identity Lifecycle Management aims to automate and manage the entire digital identity lifecycle process.</p>
+<ol>
+<li>Are there already systems of record: data sources, which the organization treats as authoritative. For example, the organization might have an HR system. That system is authoritative for providing the current list of employees, and some of their properties such as the employee's name or department.</li>
+<li>Compare the system of record with one or more directories and databases used by applications, and resolve any inconsistencies between the directories and the systems of record.</li>
+<li>Determine what processes can be used to supply authoritative information for visitors. It is necessary to find an alternate way to determine when a digital identity for a visitor is no longer needed.</li>
+</ol>
+<h2 id="management-strategy">Management strategy</h2>
+<ul>
+<li>Join: when an individual comes into scope of needing access, an identity is needed by those applications, so a new digital identity might need to be created if one isn't already available.</li>
+<li>Move: when an individual moves between boundaries, extra access authorization is required to be added or removed to their digital identity.</li>
+<li>Leave: when an individual leaves the scope of needing access, access might need to be removed, and the identity is no longer be required by applications other than for audit or forensics purposes.</li>
+</ul>
+<h2 id="monitoring-tools">Monitoring tools</h2>
+<ul>
+<li>Azure Monitor</li>
+<li>Application Insights</li>
+<li>Azure Service Health</li>
+<li>Azure Resource Health</li>
+<li>Azure Resource Manager</li>
+<li>Azure Policy</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ConfigureMicrosoftEntraID/" class="btn btn-neutral float-left" title="Configure Microsoft Entra ID"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ManageIdenties/" class="btn btn-neutral float-right" title="Create, Configure, and manage identies">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ConfigureMicrosoftEntraID/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ManageIdenties/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Configure Microsoft Entra ID - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configure Microsoft Entra ID";
+        var mkdocs_page_input_path = "Window Server/ConfigureMicrosoftEntraID.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configure Microsoft Entra ID</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#company-brand">Company Brand</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manage-entra-roles">Manage Entra Roles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#who-uses-microsoft-entra-id">Who uses Microsoft Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-roles">Microsoft Entra Roles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assign-roles">Assign Roles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#administrative-unit">Administrative Unit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#plan-your-administrative-unit">Plan your Administrative Unit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delegate-administration-in-entra-id">Delegate Administration in Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delegation-plan">Delegation Plan</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#define-roles">Define Roles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delegate-app-administrator">Delegate App Administrator</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delegate-app-ownership">Delegate App Ownership</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#default-permissions">Default permissions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-primary-domain">Set Primary Domain</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delete-custom-domain">Delete Custom Domain</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#member-vs-guest-user">Member vs Guest User</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-permissions">User permissions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sign-in-linkedin">Sign in Linkedin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manage-security-defaults">Manage Security defaults</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configure-external-user-properties">Configure external user properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configure-tenant-properties">Configure tenant properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-tenant-wide-properties">Setting tenant wide properties</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Window Server</li>
+      <li class="breadcrumb-item active">Configure Microsoft Entra ID</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="configure-microsoft-entra-id">Configure Microsoft Entra ID</h1>
+<h2 id="company-brand">Company Brand</h2>
+<p>Adding custom brand requires Microsoft Entra ID premium P1, P2, or Office 365 (for Office 365 apps) license.</p>
+<p><img alt="company brand" src="../../images/company-brand-entra-id.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Language</td>
+<td>The language is automatically set as your default and can't be changed.</td>
+</tr>
+<tr>
+<td>Sign-in Page background image</td>
+<td>Select a .png or .jpg image file for the background of your sign-in pages. The image is anchored to the center of the browser, and scales to the size of the viewable space. You can't select an image larger than 1920x1080 pixels in size or that has a file size more than 300,000 bytes.</td>
+</tr>
+<tr>
+<td>Banner Logo</td>
+<td>Select a .png or .jpg version of your logo to appear on the sign-in page after the user enters a username and on the My Apps portal page.</td>
+</tr>
+<tr>
+<td>Username hint</td>
+<td>Type the hint text that appears to users if they forget their username. This text must be Unicode, without links or code, and can't exceed 64 characters. If guests sign in to your app, we suggest not adding this hint.</td>
+</tr>
+<tr>
+<td>Sign-in page text and formatting</td>
+<td>Type the text that appears on the bottom of the sign-in page. You can use this text to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1,024 characters.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manage-entra-roles">Manage Entra Roles</h2>
+<p>Microsoft’s cloud-based identity and access management service, which helps your employee's sign-in and access resources in.</p>
+<ul>
+<li>External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.</li>
+<li>Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.</li>
+</ul>
+<h2 id="who-uses-microsoft-entra-id">Who uses Microsoft Entra ID</h2>
+<ul>
+<li>IT admins: can use Microsoft Entra ID to control access to your apps and your app resources, based on your business requirements. For example, you can use Microsoft Entra ID to require multifactor authentication when accessing important organizational resources. Additionally, you can use Microsoft Entra ID to automate user provisioning between your existing Windows Server AD and your cloud apps, including Microsoft 365. Finally, Microsoft Entra ID gives you powerful tools to automatically help protect user identities and credentials and to meet your access governance requirements.</li>
+<li>App Developer: can use Microsoft Entra ID as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's preexisting credentials. Microsoft Entra ID also provides APIs that can help you build personalized app experiences using existing organizational data.</li>
+<li>Microsoft 365, Office 365, Azure, or Dynamics CRM Online subscribers: Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically a Microsoft Entra tenant. You can immediately start to manage access to your integrated cloud apps.</li>
+</ul>
+<h2 id="microsoft-entra-roles">Microsoft Entra Roles</h2>
+<p><img alt="microsoft entra role permissions" src="../../images/micrsoft-entra-role-permission.png" /></p>
+<ul>
+<li>Global Administrator Role permissions</li>
+<li>Manage access to all administrative features in Microsoft Entra ID, and services that federate to Microsoft Entra ID</li>
+<li>Assign administrator roles to others</li>
+<li>Reset the password for any user and all other administrators</li>
+<li>User Administrator Role permissions:</li>
+<li>Create and manage all aspects of users and groups</li>
+<li>Manage support tickets</li>
+<li>Monitor service health</li>
+<li>Change passwords for users, Helpdesk administrators, and other User Administrators</li>
+<li>Billing Administrator Permissions</li>
+<li>Make purchases</li>
+<li>Manage subscriptions</li>
+<li>Manage support tickets</li>
+<li>Monitors service health</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Azure Roles</th>
+<th>Microsoft Entra Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manage access to Azure resources</td>
+<td>Manage access to Microsoft Entra resources</td>
+</tr>
+<tr>
+<td>Supports custom roles</td>
+<td>Supports custom roles</td>
+</tr>
+<tr>
+<td>Scope can be specified at multiple levels (management group, subscription, resource group, resource)</td>
+<td>Scope is at the tenant level or can be applied to an Administrative Unit</td>
+</tr>
+<tr>
+<td>Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API</td>
+<td>Role information can be accessed in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, and PowerShell</td>
+</tr>
+</tbody>
+</table>
+<p>Azure roles and Microsoft Entra roles don't span Azure and Microsoft Entra ID. However, if a Global Administrator elevates their access by choosing the Access management for Azure resources switch in the Azure portal, they're granted the User Access Administrator role (an Azure role) on all subscriptions for a particular tenant. The User Access Administrator role enables the user to grant other users access to Azure resources. This switch can be helpful to regain access to a subscription.</p>
+<h2 id="assign-roles">Assign Roles</h2>
+<ul>
+<li>Assign a role to a user or group</li>
+<li>Microsoft Entra ID -&gt; Roles and administration -&gt; Select a role -&gt; + Add Assignment</li>
+<li>Microsoft Entra ID -&gt; Select user -&gt; Assined roles -&gt; Add assignments</li>
+<li>Remove role assignment</li>
+<li>Microsoft Entra ID -&gt; Select user -&gt; Assigned Roles -&gt; Remove the assignment</li>
+<li>Create a new role</li>
+<li>Microsoft Entra ID -&gt; Roles and administration -&gt; New custom role</li>
+<li>Provide name and description in Basics tab</li>
+<li>Choose permissions for the role</li>
+<li>microsoft.directory/applications/credentials/update: Manage credential properties of app registrations</li>
+<li>microsoft.directory/applications/basic/update: Manage basic properties of app registrations</li>
+<li>Assign a user or group to a role</li>
+<li>Microsoft Entra ID -&gt; Open Users (or Groups) -&gt; Select an User (or group) -&gt; Assigned roles -&gt; + Add Assignment</li>
+<li>Assign a role to a broad-scope, like a Subscription, Resource Group, or Management Group</li>
+<li>Done via the Access control (IAM) within each settings screen</li>
+<li>Assign a role using PowerShell or Microsoft Graph API</li>
+<li>Assign a role using Privileged Identity Management (PIM)</li>
+<li>If you have a Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.</li>
+</ul>
+<p><img alt="PIM management" src="../../images/privileged-identity-management-manages-roles.png" /></p>
+<h2 id="administrative-unit">Administrative Unit</h2>
+<ul>
+<li>Admin roles for Administrative Unit</li>
+<li>Authentication administrator</li>
+<li>Helpdesk administrator</li>
+<li>License administrator</li>
+<li>Password administrator</li>
+<li>User administrator</li>
+</ul>
+<h2 id="plan-your-administrative-unit">Plan your Administrative Unit</h2>
+<ol>
+<li>Initial adoption: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.</li>
+<li>Pruning: After the criteria are defined, administrative units that are no longer required will be deleted.</li>
+<li>Stabilization: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.</li>
+</ol>
+<h2 id="delegate-administration-in-entra-id">Delegate Administration in Entra ID</h2>
+<ul>
+<li>Restricting who can create applications and manage the applications they create. By default in Microsoft Entra ID, all users can register application registrations and manage all aspects of applications they create. You can restrict to only allow selected people that permission.</li>
+<li>Assigning one or more owners to an application. A simple way to grant someone the ability to manage all aspects of Microsoft Entra ID configuration for a specific application.</li>
+<li>Assigning a built-in administrative role that grants access to manage configuration in Microsoft Entra ID for all applications. The recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra ID not related to application configuration.</li>
+<li>Create a custom role to define specific permissions. Then assign the role to a user to assign a limited-owner. Or you could assign at the directory scope - all applications - as a limited-administrator.</li>
+</ul>
+<h2 id="delegation-plan">Delegation Plan</h2>
+<ul>
+<li>Define the roles you need</li>
+<li>Delegate app administration</li>
+<li>Grant the ability to register applications</li>
+<li>Delegate app ownership</li>
+<li>Develop a security plan</li>
+<li>Establish emergency accounts</li>
+<li>Secure your administrator roles</li>
+<li>Make privileged elevation temporary</li>
+</ul>
+<h2 id="define-roles">Define Roles</h2>
+<ul>
+<li>Tasks that you do routinely, have limited risk, and are trivial to complete are excellent candidates for delegation.</li>
+<li>Tasks that you do rarely but have potential risk across the organization and require high skill levels should be considered carefully before delegating. Instead, you can temporarily elevate an account to the required role or reassign the task.</li>
+</ul>
+<h2 id="delegate-app-administrator">Delegate App Administrator</h2>
+<ul>
+<li>Application Administrator: grants the ability to manage all applications in the directory, including registrations, single sign-on settings, user and group assignments and licensing, Application Proxy settings, and consent. It doesn't grant the ability to manage Conditional Access.</li>
+<li>Cloud Application Administrator: grants all the abilities of the Application Administrator, except it doesn't grant access to Application Proxy settings.</li>
+</ul>
+<h2 id="delegate-app-ownership">Delegate App Ownership</h2>
+<ul>
+<li>Enterprise Application Owner: grants the ability to manage the ‘enterprise applications that the user owns, including single sign-on settings, user and group assignments, and adding more owners. It doesn't grant the ability to manage Application Proxy settings or Conditional Access.</li>
+<li>Application Registration Owner: grants the ability to manage application registrations for app that the user owns, including the application manifest and adding other owners.</li>
+</ul>
+<h2 id="default-permissions">Default permissions</h2>
+<p><img alt="user permissions" src="../../images/permissions-attribute-reader.png" /></p>
+<p>User Settings and Roles and Administrations</p>
+<ul>
+<li>Member Users</li>
+<li>Enumerate list of users and their contacts</li>
+<li>Invite guest users</li>
+<li>Can create Security and Microsoft 365 Groups</li>
+<li>Register new applications</li>
+<li>Gust Users</li>
+<li>Read own properties</li>
+<li>Invite guest users</li>
+<li>Can search for non-hidden groups by name</li>
+<li>Read properties of registered and enterprise applications</li>
+</ul>
+<h2 id="set-primary-domain">Set Primary Domain</h2>
+<ul>
+<li>Sign in <a href="https://portal.azure.com/">Azure Portal</a> with administrator account -&gt; Select Microsoft Entra ID -&gt; Select Custom Domain Names -&gt; Select name of domain to be primary domain -&gt; Make Primary -&gt;I</li>
+</ul>
+<p>900 domains in cloud and 450 domains on-premises</p>
+<h2 id="delete-custom-domain">Delete Custom Domain</h2>
+<ul>
+<li>Can't delete if the following:</li>
+<li>Any user has a user name, email address, or proxy address that includes the domain name.</li>
+<li>Any group has an email address or proxy address that includes the domain name.</li>
+<li>Any application in your Microsoft Entra ID has an app ID URI that includes the domain name.</li>
+<li>ForceDelete Option</li>
+<li>Only delete if the following aren't true:<ul>
+<li>You purchased a domain via Microsoft 365 domain subscription services</li>
+<li>You're a partner administering on behalf of another customer organization</li>
+</ul>
+</li>
+<li>Actions performed:<ul>
+<li>Renames the UPN, EmailAddress, and ProxyAddress of users with references to the custom domain name to the initial default domain name.</li>
+<li>Renames the EmailAddress of groups with references to the custom domain name to the initial default domain name.</li>
+<li>Renames the identifierUris of applications with references to the custom domain name to the initial default domain name.</li>
+</ul>
+</li>
+<li>Error<ul>
+<li>The number of objects to be renamed is greater than 1000</li>
+<li>One of the applications to be renamed is a multitenant app</li>
+</ul>
+</li>
+</ul>
+<h2 id="member-vs-guest-user">Member vs Guest User</h2>
+<ul>
+<li>Member users: register applications, manage their own profile photo and mobile phone number, change their own password, and invite B2B guests. In addition, users can read all directory information (with a few exceptions).</li>
+<li>Guest users: have restricted directory permissions. They can manage their own profile, change their own password, and retrieve some information about other users, groups, and apps; however, they can't read all directory information. For example, guest users can't enumerate the list of all users, groups, and other directory objects. Guests can be added to administrator roles, which grant them full read and write permissions contained in the role. Guests can also invite other guests.</li>
+</ul>
+<h2 id="user-permissions">User permissions</h2>
+<ul>
+<li>Users can register application</li>
+<li>By default, member users can register applications.</li>
+<li>Setting this option to No prevents users from creating application registrations. The ability can then be granted back to specific individuals by adding them to the Application Developer role.</li>
+<li>Restrict access to Microsoft Entra administration portal</li>
+<li>Setting this option to No lets non-administrators use the Microsoft Entra administration portal to read and manage Microsoft Entra resources. Yes restricts all non-administrators from accessing any Microsoft Entra data in the administration portal.</li>
+<li>This setting doesn't restrict access to Microsoft Entra data using PowerShell or other clients such as Visual Studio. When set to Yes, to grant a specific non-admin user the ability to use the Microsoft Entra administration portal assign any administrative role such as the Directory Readers role.</li>
+<li>This role allows reading basic directory information, which member users have by default (guests and service principals don't).</li>
+</ul>
+<h2 id="sign-in-linkedin">Sign in Linkedin</h2>
+<ul>
+<li>Reduce friction and obtain more sign-ups by allowing members to Sign In with LinkedIn, without having the need to create a new account.</li>
+<li>Minimize the costs and time associated with implementing your own sign-in, identity, profile management, and password management.</li>
+<li>Personalize your sites and applications with the latest member profiles.</li>
+</ul>
+<h2 id="manage-security-defaults">Manage Security defaults</h2>
+<ul>
+<li>Requiring all users to register for multifactor authentication (MFA).</li>
+<li>Requiring administrators to perform multifactor authentication.</li>
+<li>Blocking legacy authentication protocols.</li>
+<li>Requiring users to perform multifactor authentication when necessary.</li>
+<li>Protecting privileged activities like access to the Azure portal.</li>
+</ul>
+<h2 id="configure-external-user-properties">Configure external user properties</h2>
+<p><img alt="External user properties" src="../../images/external-user-settings-azure-active-directory.png" /></p>
+<ul>
+<li>Guest user access: Guest users can be given rights to where they operate almost as a full user, to restriction where they can only look at their own content.</li>
+<li>Guest invite settings: Who can invite guests to join the organization; from guest themselves to only admins.</li>
+<li>Guest self-service up: Allow guest to partake in self-service options for users.</li>
+</ul>
+<h2 id="configure-tenant-properties">Configure tenant properties</h2>
+<p><img alt="Tenant user properties" src="../../images/tenant-properties-azure-active-directory.png" /></p>
+<ul>
+<li>Name: friendly name for your tenant, for use in the Azure portal</li>
+<li>Country or region: location of your primary company and the Azure datacenters being used</li>
+<li>Notification language: language used for sending notifications and alerts</li>
+<li>Tenant ID: unique identifier for your tenant, used programatically</li>
+<li>Technical contact: primary contact for the tenant (defaults to the user who created the tenant)</li>
+<li>Global privacy contact: user or alias to contact for privacy concerns or issues</li>
+<li>Privacy statement URL: link to a PDF or webpage containing the privacy rules for your cloud solutions</li>
+</ul>
+<h2 id="setting-tenant-wide-properties">Setting tenant wide properties</h2>
+<ul>
+<li>Change tenant display name</li>
+<li>Azure Portal -&gt; Show portal Menu Hamburger button -&gt; properties -&gt; name box change tenant name -&gt; save properties</li>
+<li>Find Country/region</li>
+<li>Microsoft Entra ID -&gt; Properties -&gt; Tenant Properties -&gt; country/region location</li>
+<li>Find tenant location</li>
+<li>Properties -&gt; Tenant Properties -&gt; location</li>
+<li>Find tenant ID</li>
+<li>Microsoft Entra ID -&gt; Manage Section -&gt; Properties -&gt; Under tenant properties -&gt; tenant ID</li>
+<li>Change technical contact, add privacy info, global privacy contact, and privacy statement URL</li>
+<li>Microsoft Entra ID -&gt; properties<ul>
+<li>Technical contact: Type the email address for the person to contact for technical support within your organization.</li>
+<li>Global privacy contact: Type the email address for the person to contact for inquiries about personal data privacy. This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts the administrator who owns the tenant.</li>
+<li>Privacy statement URL: Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ActiveDirectory/" class="btn btn-neutral float-left" title="Active Directory"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../IdentityMicrosoftentra/" class="btn btn-neutral float-right" title="Microsoft Entra Identity">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ActiveDirectory/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../IdentityMicrosoftentra/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

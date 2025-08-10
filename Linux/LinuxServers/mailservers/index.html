@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Mail Servers - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Mail Servers";
+        var mkdocs_page_input_path = "Linux/LinuxServers/mailservers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >LinuxServers</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Mail Servers</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#mail-transfer-agents-mta">Mail Transfer Agents (MTA)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#sendmail">sendmail</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#postfix">postfix</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#exim">Exim</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mail-delivery-agent-mda">Mail Delivery Agent (MDA)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#binmail">Binmail</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#procmail">Procmail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#test-mail">Test mail</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Linux</li>
+          <li class="breadcrumb-item">LinuxServers</li>
+      <li class="breadcrumb-item active">Mail Servers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mail-servers">Mail Servers</h1>
+<p>Different mailservers</p>
+<ul>
+<li><a href="#mail-servers">Mail Servers</a></li>
+<li><a href="#mail-transfer-agents-mta">Mail Transfer Agents (MTA)</a><ul>
+<li><a href="#sendmail">sendmail</a></li>
+<li><a href="#configuration-file-location">Configuration file location</a><ul>
+<li><a href="#m4-macro-processor">M4 Macro processor</a></li>
+</ul>
+</li>
+<li><a href="#macro-meaning">Macro meaning</a></li>
+<li><a href="#syntax-of-sendmailcf">Syntax of sendmail.cf</a></li>
+<li><a href="#other-sendmail-directories">Other sendmail directories</a></li>
+<li><a href="#forward-file">.forward file</a></li>
+<li><a href="#alias-file-etcalias">Alias file /etc/alias</a></li>
+<li><a href="#postfix">postfix</a></li>
+<li><a href="#installing-postfix">Installing Postfix</a></li>
+<li><a href="#exim">Exim</a></li>
+</ul>
+</li>
+<li><a href="#mail-delivery-agent-mda">Mail Delivery Agent (MDA)</a><ul>
+<li><a href="#binmail">Binmail</a></li>
+<li><a href="#procmail">Procmail</a></li>
+</ul>
+</li>
+<li><a href="#test-mail">Test mail</a></li>
+</ul>
+<h2 id="mail-transfer-agents-mta">Mail Transfer Agents (MTA)</h2>
+<p>Different Mail Transfer Agents (MTA) Packages</p>
+<h3 id="sendmail">sendmail</h3>
+<p>MTA package gained popularity by being extremely versatile. Virtual domains, message forwarding, user aliases, mail lists, and host masquerading. Large configuration file</p>
+<h4 id="configuration-file-location">Configuration file location</h4>
+<ul>
+<li>/etc/mail/sendmail.cf -&gt; Fedora</li>
+<li>
+<p>/etc/sendmail.cf -&gt; OpenSUSE</p>
+</li>
+<li>
+<p>Opensuse -&gt; /etc/sysconfig/sendmail (YaST Control Center) (mail transfer agent)</p>
+</li>
+</ul>
+<h5 id="m4-macro-processor">M4 Macro processor</h5>
+<p>generates the sendmail.cf configuration file</p>
+<ul>
+<li>sendmail.mc, generic_linux.mc, linux.mc</li>
+</ul>
+<pre><code class="language-macro">dn1 #######################################################
+dn1 # File: ex.m4
+dn1 # A simple M4 extension
+dn1 ######################################################
+define('hello', 'Dear sir/Mdadmen)dn1
+define('bye', 
+'sincercely, 
+customer service')dn1
+dn1 Now type the letter and use the macros
+hello, 
+This is to inform you that we received your recent inquiry. 
+We will respond to your question soon. 
+bye
+</code></pre>
+<pre><code class="language-shell">m4 ex.m4
+</code></pre>
+<ul>
+<li>/etc/mail/sendmail.mc</li>
+<li>/usr/share/sendmail-cf -&gt; Fedora</li>
+<li>/usr/share/sendmail -&gt; OpenSuse</li>
+<li>uses mc extension, but is same as macro</li>
+</ul>
+<pre><code class="language-shell">m4 /etc/mail/sendmail.mc &gt; /etc/mail/sendmail.cf
+</code></pre>
+<h4 id="macro-meaning">Macro meaning</h4>
+<table>
+<thead>
+<tr>
+<th>macro</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VERSIONID ('setup for linux')</td>
+<td>macro inserts the version information enclosed in quotes into the output</td>
+</tr>
+<tr>
+<td>OSTYPE('linux')</td>
+<td>Specifies Linux as the OS. Have t specify this macro early to ensure proepr configruation</td>
+</tr>
+<tr>
+<td>MAILER(smtp)</td>
+<td>Describes the mailer. Accoridng to nstructions in the /usr/share/sendmail-cf/README file. MAILER delcarations are always placed at the end of the sendmail.mc file, and MAILER (smtp) always precedes MAILER (procmail). The mailer smtp refers to the SMTP mailer</td>
+</tr>
+<tr>
+<td>FEATURE</td>
+<td>Macros request various speciail features. FEATURE ('blacklist_recipents'), for example turns on the capability to block incoming mail for certain usernames, hosts, or addresses. The specification of what mail to allow or refuse is placed in the access database</td>
+</tr>
+<tr>
+<td>MASQUERADE_AS('mydomain.com')</td>
+<td>Causes sendmail to label outgoing mail as having come from the host mydomain.com. The idea is for a large organization to setup a single sendmail server that handles the mail for many subdomains and makes everything appear to come from a single domain.</td>
+</tr>
+<tr>
+<td>MASQUERADE_DOMAIN(subdomain.mydomain.com)</td>
+<td>Instructs sendmail to send mail from an address such as user@subdomain .com as having originated from the same username as the domain specified by the MASQUERADE_AS macro</td>
+</tr>
+</tbody>
+</table>
+<h4 id="syntax-of-sendmailcf">Syntax of sendmail.cf</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>Defines a class, a variable (think of it as a set) that can cotain several values. Cwlocalhost adds the name localhost to the class w</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Defines a macro, a name associated with a single value. DnMAILER-DAEMON defines the macro n as MAILER-DAEMON</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Defines a class that's been read from a file. FW /etc/mail/local-host-names reads the names of hosts from the file /etc/mail/local-host-names and adds them to the class w</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Defines the format of header lines that sendmail inserts into a message. H?P?Return-Path:&lt;$g&gt; defines the Return-Path: field of the header</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Defines a map (a key-value pari database). Karith arith defines the map named arith as the compiled in map of the name</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Specifies a mailer. The following lines define the procmail mailer:Mprocmial, P=/usr/bin/procmail,F=DFMPhnu9,S=EnvFromSMTP/HdrFromSMTP,R=EnvToSMTP/HdrFromSMTP,T=DNS/RFC822/X-Unix,A=procmail -Y -m $h $f $u</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Assigns a value to an option. O AliasFile=/etc/aliases defines the AlisasFile option to /etc/aliases, which is the name of the sendmail alias file</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Defines values for the precedence field. P junk=-100 sets to -100 the precedence of messages marked with the hader field Precedence: junk</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Defines a rule (A rule has left side and right side, if input matches the left side, the right side replaces it. This rule is called rewriting rule) R$* ; $1 strips trailing semicolons</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Labels a ruleset you can start defining with subsequent R control lines. Scanonify=3 labels the next ruleset as canonify and ruleset 3</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Adds a username to the trusted (class t) Troot adds root to the class of trusted users</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Defines the major version number of the configuration file</td>
+</tr>
+</tbody>
+</table>
+<h4 id="other-sendmail-directories">Other sendmail directories</h4>
+<table>
+<thead>
+<tr>
+<th>Directory</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/etc/mail/access</td>
+<td>names or IP addresses or both of hosts allowed to send mail (usedful in stopping spam (unwanted email))</td>
+</tr>
+<tr>
+<td>/etc/mail/access.db</td>
+<td>Access database generated from the /etc/mail/access file</td>
+</tr>
+<tr>
+<td>/etc/mail/helpfile</td>
+<td>Help information for SMTP commands</td>
+</tr>
+<tr>
+<td>/etc/mail/local-host-names</td>
+<td>Names by which this host is known</td>
+</tr>
+<tr>
+<td>/etc/mail/mailertable</td>
+<td>Mailer table used to voerride how mail is routed (The entry comcast.net smtp:smtp.comcast.net has too be sent to smtp.comcast.net)</td>
+</tr>
+<tr>
+<td>/etc/mail/relay-domains</td>
+<td>Hosts that permit relaying</td>
+</tr>
+<tr>
+<td>/etc/mail/trusted-users</td>
+<td>List of users allowed to send mail using other users' names without a warning</td>
+</tr>
+<tr>
+<td>/etc/mail/userdb.db</td>
+<td>User database file contianing information about each user's login name and real name</td>
+</tr>
+<tr>
+<td>/etc/mail/virtusertable</td>
+<td>Database of suers with virtual-domain addresses hosted on this system</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-shell">makemap hash /etc/mail/mailertable &lt; /etc/mail/mailertable
+cd /etc/mail 
+make
+</code></pre>
+<h4 id="forward-file">.forward file</h4>
+<pre><code class="language-txt">wilbur@somewherelese.net, wilbur\
+</code></pre>
+<h4 id="alias-file-etcalias">Alias file /etc/alias</h4>
+<p>Mailing list creation</p>
+<pre><code class="language-txt">brown: glbrown
+all: jessica, isaac, alex, caleb, glbrown 
+</code></pre>
+<pre><code class="language-shell">sendmail -bi 
+</code></pre>
+<h3 id="postfix">postfix</h3>
+<p>Modular application using several different programs to implement MTA. Simple, just 2 small configuration files with plaintext parameters and value names to define functionality</p>
+<h4 id="installing-postfix">Installing Postfix</h4>
+<ul>
+<li>No configuraition -&gt; Leaves the default postfix configuration files</li>
+<li>Internet site -&gt; Sets postfix to send &amp; receive email messages directly on the internet</li>
+<li>Internet with smarthost -&gt; Sets postfix to forward all outbound messages to a specific host, but receive incoming mail delivery</li>
+<li>Satellite system -&gt; Sets postfix to route all mail to a remote smarthost server</li>
+<li>Local only -&gt; Processes only mail destined for local user accounts on the system</li>
+</ul>
+<pre><code class="language-shell">sudo apt install postfix
+
+sudo dnf install psotfix
+
+sudo systemctl enable postfix
+sudo systemctl start postfix
+
+sudo firewall-cmd --add-service=smtp --permanent
+sudo firewall-cmd --reload 
+</code></pre>
+<ul>
+<li>/etc/postfix/main.cf to store email server settings</li>
+</ul>
+<h3 id="exim">Exim</h3>
+<p>One large program to handle all functions. Attempts to avoid queuing messages as much as possible instead relying on immediate deliverly</p>
+<h2 id="mail-delivery-agent-mda">Mail Delivery Agent (MDA)</h2>
+<p>Different Mail Delivery Agents (MDA) Packages</p>
+<h3 id="binmail">Binmail</h3>
+<p>Most popular MDA program. Located in the system, /bin/mail. became popular due to its simplicity. Read email messages stored in the standard /var/spool/mail</p>
+<h3 id="procmail">Procmail</h3>
+<p>Comes from its versatility in creating user-configured recipes that allow a user to direct how the server processes received mail. A user can create a personal .procmailrc file in their $HOME directory to direct messages. Does mail stuff automatically.</p>
+<h2 id="test-mail">Test mail</h2>
+<pre><code class="language-shell">sudo apt-get install mailutils
+
+sudo dnf install mailx
+
+mail rich 
+mail 
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../fileservers/" class="btn btn-neutral float-left" title="File Servers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../webservers/" class="btn btn-neutral float-right" title="Webserver">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../fileservers/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../webservers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

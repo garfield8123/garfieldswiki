@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Linux security - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Linux security";
+        var mkdocs_page_input_path = "Linux/GeneralLinux/linuxsecurity.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >GeneralLinux</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Linux security</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#security-framework">Security Framework</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#determining-business-requirements">Determining business requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#risk-analysis">Risk analysis</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#123-of-risk-analysis">123 of risk analysis</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#common-security-terminaology">Common Security terminaology</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#common-security-tools">Common Security Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#changing-user-security">Changing user security</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-users">Adding users</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fields-in-etcgroup-file">Fields in /etc/group file</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#filefolder-permissions-code">File/Folder Permissions code</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#find-suid-programs">find SUID programs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gpg-keys">gpg keys</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#signing-file">Signing file</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#encryping-and-decrypting">Encryping and decrypting</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#openssh-security">OpenSSH security</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#security-files-to-be-aware">Security files to be aware</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#security-audits">Security Audits</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#nontechnical-aspect">Nontechnical aspect</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#technical-aspect">Technical aspect</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#computer-vulnerabilites">Computer vulnerabilites</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#file-permissions">File Permissions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#password-security">Password security</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#security-testing-tools">Security Testing Tools</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Linux</li>
+          <li class="breadcrumb-item">GeneralLinux</li>
+      <li class="breadcrumb-item active">Linux security</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linux-security">Linux security</h1>
+<h2 id="security-framework">Security Framework</h2>
+<p><img alt="security framework" src="/images/securityframework.jpg" /></p>
+<h2 id="determining-business-requirements">Determining business requirements</h2>
+<p>Identify the computer resources and information that you have to protect (Including any requirements imposed by laws, requirement to protect the privacy of some types of data)</p>
+<ul>
+<li>Enabling access to information by authorized users</li>
+<li>Implementing business rules that specify who has access to what information</li>
+<li>Employing a strong user-authentication system</li>
+<li>Denying execution to malicious or destructive actions on data</li>
+<li>protecting data from end to end as it moves across networks</li>
+<li>Implemnting all security and privacy requiremtns that laws impose</li>
+</ul>
+<h2 id="risk-analysis">Risk analysis</h2>
+<ul>
+<li>Threats -&gt; What you're protecting against</li>
+<li>Vulnerabilites  -&gt; Weaknesses that may be exploited by threats (the risks)</li>
+<li>Probability -&gt; The likelihood that a threat will exploit the vulnerability |</li>
+<li>Impact -&gt; The effect of exploiting a specific vulnerability</li>
+<li>Mitigation -&gt; What to do to reduce vulnerabilities</li>
+</ul>
+<h3 id="123-of-risk-analysis">123 of risk analysis</h3>
+<ol>
+<li>Assign subjective ratings of low, medium, and high to the probability</li>
+<li>Assign similar ratings to the effect</li>
+<li>Assign a numeric value to the three levels -- low=1, medium=2, and high=3 --for both probability and effect</li>
+<li>Multiple the probability by the effect</li>
+<li>Decide to develop protections for vulnerabilities that exceed a specific threshold for the product of probability and effect</li>
+</ol>
+<h2 id="common-security-terminaology">Common Security terminaology</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application gateway</td>
+<td>A proxy service that acts as a gateway for application-level protocols, such as FTP, HTTP, NNTP, and ssh</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>Process of confirming that a user is indeed who they claim to be. The typical authentication method is a challenge-response method wherein the user enters a username and secret password to confirm their identity</td>
+</tr>
+<tr>
+<td>Backdoor</td>
+<td>A security weakness that a cracker places on a host to bypass security firewalls</td>
+</tr>
+<tr>
+<td>Bastion host</td>
+<td>A highly secured computer that serves as an organization main porint of presence on the internet. A bastion host typically resides on the perimeter network, but a dual-homed hosted (with one network itnerface connected to the internet and the other to the internal network) is also called a bastion host</td>
+</tr>
+<tr>
+<td>Buffer overeflow</td>
+<td>A security flaw in a progra that enables a cracker to send an excessive amount of data to that program and to overwrite parts of the running gprogram iwth code in the data being sent. The result is that the cracker can execute arbitrary code on the systemand possibly gain access to the system as a privlleged user. The exec-shield feature of the linux kernel protects against buffer overflows</td>
+</tr>
+<tr>
+<td>Certificate</td>
+<td>Electronic document that identifies an entity (such as person, an organization, or a cocmputer) and associates a public key with that identity. A certificate contains the certificate holder's name, a serial number, an expiration date, a copy of the certificate holder's public key, and the digital signature of the certificate authority so that a receipent can verify that the certificate is real</td>
+</tr>
+<tr>
+<td>Certificate authority (CA)</td>
+<td>An organization that validates identifies and issues certificates</td>
+</tr>
+<tr>
+<td>Cracker</td>
+<td>A person who breaks into (or attempts to break into) a host, often with malicious intent</td>
+</tr>
+<tr>
+<td>DDOS</td>
+<td>A variant of DOS that uses a coordinated attack from a distributed system of computers rather than a single source. Often uses worms to spread to -- and take control of -- multiple computers that can then attack the target</td>
+</tr>
+<tr>
+<td>Decryption</td>
+<td>The process of transforming encrypted information into its original, intelligible form</td>
+</tr>
+<tr>
+<td>Digital signature</td>
+<td>A one way MD5 (Message Digest algorithm 5) or SHA-1 (Secure Hash Algorithm -1) hash of a message encrypted with the private key of the message originator, used to verify the integrity of a message and ensure nonrepudiation</td>
+</tr>
+<tr>
+<td>DMZ</td>
+<td>Aother name for the perimeter network</td>
+</tr>
+<tr>
+<td>DoS</td>
+<td>Attack that uses so many of the resources on your computer and network that legitmate users can't access and use the system. From a single source, the attack overwhelms the target computer with messages and blocks legitimate traffic.</td>
+</tr>
+<tr>
+<td>Dual-homes host</td>
+<td>A computer with two network interfaces</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>The process of transforming information so that it's unintelligible to anyone but the intended recipient. Transformation is performed by a mathematical operation between a key and the information</td>
+</tr>
+<tr>
+<td>Exploit tools</td>
+<td>Publicly available and sophisticated tools that intruders of various skill levels can use to determine vulnerabilities and gain entry into targeted systems</td>
+</tr>
+<tr>
+<td>Firewall</td>
+<td>A controlled-acess gateway between an organization's internal network and the internet. A dual-homed host can be configured as a firewall</td>
+</tr>
+<tr>
+<td>Hash</td>
+<td>The result when a mathematical function converts a message to a fixed-size numberic value known as a message edigest (or hash). The MD5 algorithm, for example, produces a 128 bit message digest. SHA 1 generates a 160 bit message digest. The hash of a message is encrypted with the private key of the sender to produce the digital signature</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>A computer on a network that's configured to offer services to other computers on the network</td>
+</tr>
+<tr>
+<td>Integrity</td>
+<td>For received data, a state of being the same as originally sent (that is unaltered in transit)</td>
+</tr>
+<tr>
+<td>IP Spoofing</td>
+<td>An attack in which a cracker figures out the IP address of a trusted host and then sends packets that appear to come from the trusted host. The attacker can send packets but can't see responses. But the attacker can predict the sequence of packets and essentially send commands that set up a backdoor for future break-ins</td>
+</tr>
+<tr>
+<td>IPSec (IP Security protocol)</td>
+<td>Security protocol for the network layer of the OSI networking model, designed to provide cryptographic security services for IP packets. IPSec provides encryption based authentication, integrity, access control, and confidentialitiy</td>
+</tr>
+<tr>
+<td>Logic bomb</td>
+<td>Form of sabotage in which programmer inserts code that causes the program to perform a destructive action when some triggering event occurs, such as terminating the programmer's employment</td>
+</tr>
+<tr>
+<td>Nonrepudiation</td>
+<td>Security feature that prevents the sender of data from being able to deny having sent the data</td>
+</tr>
+<tr>
+<td>packet</td>
+<td>A collection of bytes, assembled accoridng to a specific protocol, that serves as the basic unit of communication on a network. On TCP/IP networks, for example, the packet may be referred to as an IP packet or a TCP/IP packet</td>
+</tr>
+<tr>
+<td>packet filtering</td>
+<td>Selective blocking of packets according to type of packet (as specified by the source and destination IP address or port)</td>
+</tr>
+<tr>
+<td>Perimeter network</td>
+<td>Netowrk between the internet and the protected internal network. The perimeter network (DMZ) where the bastion host resides</td>
+</tr>
+<tr>
+<td>Port Scanning</td>
+<td>Method of discovering which ports are open on a system, performed by sending connection requests to the ports. Procedure is usally a precursor to further attacks (nmap and netstat)</td>
+</tr>
+<tr>
+<td>proxy server</td>
+<td>Server on the bastion host that enables internal clients to access external servers (enables external clients to access servers inside the protected network).</td>
+</tr>
+<tr>
+<td>Public Key Cryptography</td>
+<td>An encryption method that uses a pair of keys -- a private key and a public key -- to encrypt and decrypt the information. Anything encrypted with the public key can be decrypted only with the corresponding private key</td>
+</tr>
+<tr>
+<td>Public Key Infrastructure (PKI)</td>
+<td>A set  of standards and services that enables the use of public key cryotography and certificates in a networked environment, PKI facilities tasks such as issuing, renewing, and revoking certificates, and generating and distributing public and private key pairs</td>
+</tr>
+<tr>
+<td>Screening router</td>
+<td>Internet router that filters packets</td>
+</tr>
+<tr>
+<td>Setuid Program</td>
+<td>Setuid or suid runs with the permissions of the pgogram owner, regardless of who actually runs it. If root owns a setuid/suid program that program has root privileges regardless of who started the program. Crackers often exploit vulnerabilites in setuid programs to gain privileged access to a system. se group id (sgid) same issue</td>
+</tr>
+<tr>
+<td>Sniffer</td>
+<td>packet sniffer -- a program that intercepts routed data and exmamines each packet in search of specified information such as passwords transmitted in clear text</td>
+</tr>
+<tr>
+<td>Spyware</td>
+<td>Software that covertly gathers user information through the user's internet connection and usually transmits that information in the background to someone else. Spyware can also gather information about email addresses and even passwords and credit card numbers. Spyware is similar to a Trojan horse in that users are tricked into isntalling spyware when they install something else</td>
+</tr>
+<tr>
+<td>Symmetric key encryption</td>
+<td>An encryption method wherein the same key is used to encrypt and decrypt the information</td>
+</tr>
+<tr>
+<td>Threat</td>
+<td>An event or activity, delierate or unintentional, with the potential for causing harm to a systemme or network</td>
+</tr>
+<tr>
+<td>Trojan horse</td>
+<td>A program that masquerades a sbenign program, but is really backdoor used for attacking a system. Attacks often install a collection of Trojan horse programs that enable the attacker to freely access the system with root privileges yet hide that fact from the system administrator. Such collections of Trojan horse programs are called rootkits</td>
+</tr>
+<tr>
+<td>virus</td>
+<td>Self replicating program that spreads from one computer to another by attaching itself to other programs</td>
+</tr>
+<tr>
+<td>vulnerability</td>
+<td>A flaw or weakness that may cause harm to a system or network</td>
+</tr>
+<tr>
+<td>War-dialing</td>
+<td>Using simple programs that dial consecutive phone numbers looking for modems</td>
+</tr>
+<tr>
+<td>War-driving</td>
+<td>A method of gaining entry into wireless computer networks that uses a computer, antennas, and a wireless network card and that involves patrolling locations to gain unauthorized access</td>
+</tr>
+<tr>
+<td>worm</td>
+<td>A self-replicating program that copies itself from one computer to another over a network</td>
+</tr>
+</tbody>
+</table>
+<h2 id="common-security-tools">Common Security Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chage</td>
+<td>Modify the time between required password chanes (both min, max number  of days), the number of days of warning to be given that a change must be made</td>
+</tr>
+<tr>
+<td>find</td>
+<td>Allows you to find anathing on the machine</td>
+</tr>
+<tr>
+<td>lsof</td>
+<td>list open files</td>
+</tr>
+<tr>
+<td>netstat</td>
+<td>Status of the networkr, including network connections, routing tales and statistics per interface. Similiar command SS</td>
+</tr>
+<tr>
+<td>nmap</td>
+<td>Used to scan the network and create a map of what's avilable on it</td>
+</tr>
+<tr>
+<td>passwd</td>
+<td>Utility with which users can change their passwords at their command line whenever necessary</td>
+</tr>
+<tr>
+<td>su</td>
+<td>Become another  user, can be used within the current user's session.</td>
+</tr>
+<tr>
+<td>sudo</td>
+<td>Perform a job with elevated privileges, sudo enables the user to just run that task with elevated privileges</td>
+</tr>
+<tr>
+<td>ulimit</td>
+<td>Resource limits on shells can be set or viewed using this command to keep one user from hogging all resources</td>
+</tr>
+<tr>
+<td>usermod</td>
+<td>enhanced version of change. Can be used to set/change password expiration parameters and to specify a default shell, lock or unlock an account</td>
+</tr>
+</tbody>
+</table>
+<h2 id="changing-user-security">Changing user security</h2>
+<pre><code class="language-shell">chage -l root
+chage -M 90 root # maximum days
+</code></pre>
+<h2 id="adding-users">Adding users</h2>
+<pre><code class="language-shell">useradd -c &quot;Rich Blum&quot; rblum
+passwd rblum
+userdel rblum
+userdel -r rblum
+</code></pre>
+<ul>
+<li>/etc/default/useradd: Specified the default shell (/bin/bash) and the default home directory location (/home)</li>
+<li>/etc/login.defs: Provides system wide defaults for automatic group and user IDs, as well as password-expiration parameters</li>
+<li>/etc/skel: A directory that contains the default files that useradd creates in the user's home directory</li>
+<li>usermod -g root rblum: root as primary group</li>
+<li>groupadd {name}: Creates a new group automatically</li>
+</ul>
+<h2 id="fields-in-etcgroup-file">Fields in /etc/group file</h2>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>groupname</td>
+<td>The name of the group (such as wheel)</td>
+</tr>
+<tr>
+<td>password</td>
+<td>The group password (An x means that the password is stored in the /etc/shadow file)</td>
+</tr>
+<tr>
+<td>GID</td>
+<td>The numerical group ID (such as 10)</td>
+</tr>
+<tr>
+<td>membership</td>
+<td>A comma-separated list of usernames that belong to this group (such as root,rblum)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="filefolder-permissions-code">File/Folder Permissions code</h2>
+<p>| who | action | permission |
+| u (user) | + (add) | r (read) |
+| g (group) | - (remove) | w (write) |
+| o (others) | = (assign) | x (execute) |
+| a (all) | s (set user ID) |  |</p>
+<pre><code class="language-shell">chmod a+x file 
+</code></pre>
+<h2 id="find-suid-programs">find SUID programs</h2>
+<pre><code class="language-shell">find / -type f -perm /4000
+</code></pre>
+<h2 id="gpg-keys">gpg keys</h2>
+<pre><code class="language-shell">gpg --gen-key
+
+gpg --list-keys
+
+gpg --armor --export root@test.localhost &gt; richkey.asc 
+
+gpg --import richkey.asc 
+
+gpg --fingerprint rich@test.localhost
+
+gpg --sign-key rich@test.localhost
+</code></pre>
+<h3 id="signing-file">Signing file</h3>
+<pre><code class="language-shell">gpg -i message.sig -s message
+gpg --verify message.sig
+
+gpg -i message --decrypt message.sig
+gpg -i message.asc --clearsign message
+
+gpg --verify message.asc 
+</code></pre>
+<h3 id="encryping-and-decrypting">Encryping and decrypting</h3>
+<pre><code class="language-shell">gpg -o message.gpg -e -r send@emai.com message
+
+gpg -o message --decrypt message.gpg
+
+gpg -o secret.gpg -c somefile # encrypt file
+
+gpg -o myfile --decrypt secret.gpg # decrypt 
+</code></pre>
+<h2 id="openssh-security">OpenSSH security</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/usr/sbin/sshd</td>
+<td>The ssh daemon must run ona host if you want users on a remove systems to use the ssh client to log in securely. When a connection from the ssh client arrives sshd performs authentication by using public key cryotpgraphy and establishes an encrypted communication link with the ssh client</td>
+</tr>
+<tr>
+<td>/usr/bin/ssh</td>
+<td>Users cna run this ssh client to log in to a host running sshd.</td>
+</tr>
+<tr>
+<td>/usr/bin/slogin</td>
+<td>Component is a symbolic link to /usr/bin/ssh</td>
+</tr>
+<tr>
+<td>/usr/bin/scp</td>
+<td>Secure copy program works like rcp, but secure. Uses SSH for data transfer and provides the same authentication and security as ssh</td>
+</tr>
+<tr>
+<td>/usr/bin/ssh-keygen</td>
+<td>Generate the public and private key pairs that you need for public key cryotogrpahy in Openssh. generate key pairs for both RSA and DSA (Digital signature algorithm).</td>
+</tr>
+<tr>
+<td>/etc/ssh/sshd_config</td>
+<td>Configuration file for the sshd server specifies many parameters for sshd, including the port to listen to, the protcol to use, and the location of other files</td>
+</tr>
+<tr>
+<td>/etc/sshd/ssh_config</td>
+<td>Configuration file for the ssh client, each user can have an ssh configuration file named config in the .ssh subdirectory of the user's home directory</td>
+</tr>
+</tbody>
+</table>
+<h2 id="security-files-to-be-aware">Security files to be aware</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/etc/nologin</td>
+<td>If this file exists, denies login to all users except root. File can be handy when maintenace needs to be done and users need to stay off the system for a period of time. Removing the file restores login capability for all users. The file can be created as a text file with any editor, or you can often use the nologin command to create it</td>
+</tr>
+<tr>
+<td>/etc/passwd</td>
+<td>Holds much of the  user account information</td>
+</tr>
+<tr>
+<td>/etc/shadow</td>
+<td>When shadowing is turned on -- which it almost always is -- password vlaues (hashes) are stored in this file (which is more secure) as opposed to in /etc/passwd</td>
+</tr>
+<tr>
+<td>/etc/xinetd.d/*</td>
+<td>Directory can be used to store configuration files used by xinetd, the server daemon</td>
+</tr>
+<tr>
+<td>/etc/xinetd.conf</td>
+<td>This file is the main configuration file used by xinetd, the server daemon</td>
+</tr>
+<tr>
+<td>/etc/inetd.d/*</td>
+<td>Directory can be used to store configuration files used by inetd, the internet daemon in almost all distributions inetd has been replaced by xinetd</td>
+</tr>
+<tr>
+<td>/etc/inetd.conf</td>
+<td>This file is the main configuration file used by inetd, the internet daemon</td>
+</tr>
+<tr>
+<td>/etc/inittab</td>
+<td>This file is the initial startup (initialization) table used to identify what starts and stps as the system is booted and changes run states</td>
+</tr>
+<tr>
+<td>/etc/init.d/*</td>
+<td>The directory can hold configuration files that are used during the change of run states level and referenced by inittab file</td>
+</tr>
+<tr>
+<td>/etc/hosts.allow</td>
+<td>If this file exists, it specifcaly lists the hosts that are allowed to network with this one, if the file doesn't exist, by default all hosts are allowed to network with this one</td>
+</tr>
+<tr>
+<td>/etc/hosts.deny</td>
+<td>If this file exists, it specifically lists the hosts that aren't allowed to network with this one. Having an allow file that identifies only hosts that can network with this one; having a deny file that identifies only hosts that can't connect with this one; having neither file, allows all other hosts to network with this one</td>
+</tr>
+</tbody>
+</table>
+<h2 id="security-audits">Security Audits</h2>
+<ul>
+<li>independent verification=organization comlies with its existing policies and procedures for computer security (nontechnical aspect)</li>
+<li>Independent testing=technical aspect</li>
+</ul>
+<h3 id="nontechnical-aspect">Nontechnical aspect</h3>
+<ul>
+<li>documents, interviewing people</li>
+</ul>
+<h3 id="technical-aspect">Technical aspect</h3>
+<ul>
+<li>how well host and network is secured.</li>
+</ul>
+<h2 id="computer-vulnerabilites">Computer vulnerabilites</h2>
+<ul>
+<li>SANS institue newsletters</li>
+<li>CVE</li>
+<li>National Vulnerability database (nvd.nist.org)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>vulnerability type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BIND DNS</td>
+<td>Berkeley Internet Domain Name (BIND) package that implements the Domain Name System (DNS), the internet's name service that translates a name to an IP address</td>
+</tr>
+<tr>
+<td>Apache Web Server</td>
+<td>Some Apache modules (mod_ssl) have known vulnerabilities. Any vulnerability in Common Gateway Interface (CGI) programs used with web servers to process interactive web pages can give attackers a way to gain access to a systme</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>User accounts sometimes have no passwords or have weak passwords that are easily cracked by password-cracking programs</td>
+</tr>
+<tr>
+<td>CVS,Subversion</td>
+<td>Concurrent Versions Systems (CVS) popular source code control system in Linux systems. Subversion is another version control system. These version control systems have vulnerabilites that can enable an attacker to execute arbitrary code</td>
+</tr>
+<tr>
+<td>sendmail</td>
+<td>Complex program used to transport mail messages from one system to another.</td>
+</tr>
+<tr>
+<td>SNMP</td>
+<td>Simple Network Management Protocl (SNMP) used to remotely monitor and administer various network connected systems ranging from routers to computers. SNMP lacks good access control, so an attacker may be able to reconfigure or shut down your system running SNMP</td>
+</tr>
+<tr>
+<td>Open Secure Sockets Layer (Open SSL)</td>
+<td>Many applications such as Apache Web Server use OpenSSL to provide crytogrpahic security for network connection.</td>
+</tr>
+<tr>
+<td>Network File System (NFS) and Network Information Service (NIS)</td>
+<td>Both NFS and NIS have many security problems (buffer overflow, potential for denial-of-service attacks, and weak authentication). NFS and NIS are often misconfigured, which could allow local and remote users to exploit the security holes</td>
+</tr>
+<tr>
+<td>Databases</td>
+<td>Databases like MySQL and PostgreSQL are complex applications that can be difficult to configure and secure correctly. These databases have many features that can be misused or exploited to compromise  the confidentiality, availability, and integrity of data</td>
+</tr>
+<tr>
+<td>Linux Kernel</td>
+<td>The Linux kernel is susceptible to many vulnerabilites, such as denial of service, execution of aritrary code, and root level access to the system</td>
+</tr>
+</tbody>
+</table>
+<h2 id="file-permissions">File Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>File Path</th>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/boot/grub/menu.lst</td>
+<td>600</td>
+<td>GRUB bootloader menu file</td>
+</tr>
+<tr>
+<td>/etc/cron.allow</td>
+<td>400</td>
+<td>List of users permitted to use cron to submit periodic jobs</td>
+</tr>
+<tr>
+<td>/etc/cron.deny</td>
+<td>400</td>
+<td>List of users who can't use cron to submit periodic jobs</td>
+</tr>
+<tr>
+<td>/etc/crontab</td>
+<td>644</td>
+<td>Systemwide periodic jobs</td>
+</tr>
+<tr>
+<td>/etc/hosts.allow</td>
+<td>644</td>
+<td>List of hosts allowed to use internet services that are started with TCP wrappers</td>
+</tr>
+<tr>
+<td>/etc/hosts.deny</td>
+<td>644</td>
+<td>List of hosts denied access to internet services that are started with TCP wrappers</td>
+</tr>
+<tr>
+<td>/etc/logrotate.conf</td>
+<td>644</td>
+<td>File that controls how log files rotate</td>
+</tr>
+<tr>
+<td>/etc/pam.d</td>
+<td>755</td>
+<td>Directory with configuration files for pluggable authentication modules (PAMs)</td>
+</tr>
+<tr>
+<td>/etc/passwd</td>
+<td>644</td>
+<td>Old style password file with user account information ut not the passwords</td>
+</tr>
+<tr>
+<td>/etc/rc.d</td>
+<td>755</td>
+<td>Directory with system-startup scripts</td>
+</tr>
+<tr>
+<td>/etc/securetty</td>
+<td>600</td>
+<td>TTY interfaces (terminals) from which root can log in</td>
+</tr>
+<tr>
+<td>/etc/security</td>
+<td>755</td>
+<td>Policy files that control system access</td>
+</tr>
+<tr>
+<td>/etc/shadow</td>
+<td>400</td>
+<td>File with encrypted passwords and password expiration information</td>
+</tr>
+<tr>
+<td>/etc/shutdown.allow</td>
+<td>400</td>
+<td>Users who can shut down or reboot by pressing Ctrl+Alt+Delete</td>
+</tr>
+<tr>
+<td>/etc/ssh</td>
+<td>755</td>
+<td>Directory with configuration files for SSH</td>
+</tr>
+<tr>
+<td>/etc/sysconfig</td>
+<td>755</td>
+<td>System configuration files</td>
+</tr>
+<tr>
+<td>/etc/sysctl.conf</td>
+<td>644</td>
+<td>Kernel configuration parameters</td>
+</tr>
+<tr>
+<td>/etc/syslog.conf</td>
+<td>644</td>
+<td>Configuration file for the syslogd server that logs messages</td>
+</tr>
+<tr>
+<td>/etc/udev/udev.conf</td>
+<td>644</td>
+<td>Configuration fiel for udev -- the program that provides the capability to dynamically name hot-pluggable devices and create the device files in the /dev directory</td>
+</tr>
+<tr>
+<td>/etc/vsftpd</td>
+<td>600</td>
+<td>Configuration file for the Very Secure FTP server</td>
+</tr>
+<tr>
+<td>/etc/vsftpd.ftpusers</td>
+<td>600</td>
+<td>List of users who aren't allowed to use FTP to transfer files</td>
+</tr>
+<tr>
+<td>/etc/xinetd.conf</td>
+<td>644</td>
+<td>Configuration file for the xinetd server</td>
+</tr>
+<tr>
+<td>/etc/xinetd.d</td>
+<td>755</td>
+<td>Directory containing configuration files for specific services that the xinetd server can start</td>
+</tr>
+<tr>
+<td>/var/log</td>
+<td>755</td>
+<td>Directory with all log files</td>
+</tr>
+<tr>
+<td>/var/log/lastlog</td>
+<td>644</td>
+<td>Information about all previous logins</td>
+</tr>
+<tr>
+<td>/var/log/messages</td>
+<td>644</td>
+<td>Main system message log file</td>
+</tr>
+<tr>
+<td>/var/log/wtmp</td>
+<td>664</td>
+<td>Infformation about current logins</td>
+</tr>
+</tbody>
+</table>
+<h2 id="password-security">Password security</h2>
+<table>
+<thead>
+<tr>
+<th>File pathname</th>
+<th>Ownership</th>
+<th>Permission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/etc/group</td>
+<td>root.root</td>
+<td>644</td>
+</tr>
+<tr>
+<td>/etc/passwd</td>
+<td>root.root</td>
+<td>644</td>
+</tr>
+<tr>
+<td>/etc/shadow</td>
+<td>root.root</td>
+<td>400</td>
+</tr>
+</tbody>
+</table>
+<h2 id="security-testing-tools">Security Testing Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>name of tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Port scanners</td>
+<td>nmap, strobe</td>
+</tr>
+<tr>
+<td>Vulnerability scanners</td>
+<td>Nessus Security Scanner, SAINT, SARA, Whisker (CGI scanner), ISS Internet Scanner, CyberCop Scanner, Vetescan, Retina Network Security Scanner</td>
+</tr>
+<tr>
+<td>Network utilities</td>
+<td>Netcat, hping2, Friewalk, Cheops, ntop, ping, ngrep, AirSnort(802.11 WEP encryption-cracking tool)</td>
+</tr>
+<tr>
+<td>Host-Security Tools</td>
+<td>Tripwire, lsof</td>
+</tr>
+<tr>
+<td>Packet sniffers</td>
+<td>tcpdump, ethereal, dsniff, sniffit</td>
+</tr>
+<tr>
+<td>Intrusion Detection</td>
+<td>Aide (advanced Intrusion Detection Environment), Snort, Aabacus Portsentry, scanlogd, NFR, LIDSSystems (IDSs)</td>
+</tr>
+<tr>
+<td>Log Analyssis and Monitoring tools</td>
+<td>logcolorise, tcpdstats, nlog, logcheck, logwatch, swatch</td>
+</tr>
+<tr>
+<td>Password cracking tool</td>
+<td>John the ripper</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../linuxschedule/" class="btn btn-neutral float-left" title="Linux Scheduling"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../linuxshell/" class="btn btn-neutral float-right" title="Linux shell scripting">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../linuxschedule/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../linuxshell/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

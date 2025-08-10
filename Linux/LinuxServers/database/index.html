@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Database Servers - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Database Servers";
+        var mkdocs_page_input_path = "Linux/LinuxServers/database.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >LinuxServers</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Database Servers</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#postgresql">PostgreSQL</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#install-postgresql">Install PostgreSQL</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#postgresql-command-line-paramters">PostgreSQL Command line paramters</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#postgresql-commands">Postgresql commands</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#create-user">Create user</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mysql">MySQL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mariadb">MariaDB</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#install-mariadb">Install Mariadb</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mysql-command-line-parameters">Mysql command-line parameters</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mysql-commands">Mysql Commands</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mysql-users">MYSQL Users</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mongodb">MongoDB</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Linux</li>
+          <li class="breadcrumb-item">LinuxServers</li>
+      <li class="breadcrumb-item active">Database Servers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="database-servers">Database Servers</h1>
+<ul>
+<li>Different database</li>
+<li><a href="#postgresql">PostgreSQL</a></li>
+<li><a href="#mysql">MySQL</a></li>
+<li><a href="#mongodb">MongoDB</a></li>
+</ul>
+<h2 id="postgresql">PostgreSQL</h2>
+<p>PostgreSQL known for its advanced database features. Follows the standard atomicity, consistency, isolation, and durability (ACID) guidlines used by commericial database and supports many fancy features</p>
+<h3 id="install-postgresql">Install PostgreSQL</h3>
+<pre><code class="language-shell">sudo apt install postgresql
+systemctl status postgresql
+
+sudo dnf install postgresql-server
+systemctl enable postgresql
+su -c '/usr/bin/postgresql-setup' --initdb
+</code></pre>
+<h3 id="postgresql-command-line-paramters">PostgreSQL Command line paramters</h3>
+<table>
+<thead>
+<tr>
+<th>short Name</th>
+<th>Long Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a</td>
+<td>--echo-all</td>
+<td>Displays all SQL lines processed from a script file in the output</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>--no-align</td>
+<td>Sets the output format to unaligned mode, with data not didsplayed as a formatted table</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>--command</td>
+<td>Executes the specified SQL statement and exits</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>-dbname</td>
+<td>Specifies the database to connect with</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>--echo-queries</td>
+<td>Echoes all queries to the screen</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>--echo-hidden</td>
+<td>Echoes all hidden psql meta-commands to the screen</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>--file</td>
+<td>Exeuctes SQL commands from the specified file and exits</td>
+</tr>
+<tr>
+<td>-F</td>
+<td>--field-separator</td>
+<td>Specifies the character used to separate column data when in unaligned mode (with the default being a comma)</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>--host</td>
+<td>Specifies the IP address or hostname of the remote PostgreSQL server</td>
+</tr>
+<tr>
+<td>-H</td>
+<td>--html</td>
+<td>HTML table output mode</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>--list</td>
+<td>Displays a list of available databases on the server and exits</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>--log-file</td>
+<td>Sends a session log to a file</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>--no-readline</td>
+<td>Disables enhanced command-line editing</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>--output</td>
+<td>Redirects query output to the specified file</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>--port</td>
+<td>Specifies the PostgreSQL server TCP port to connect with</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>--pset</td>
+<td>Sets the table printing option specified to a specified value</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>--quiet</td>
+<td>Quiet mode; doesn't display output messages</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>--record-sperator</td>
+<td>Uses the specified character as the record sparator (with the default being the newline character)</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>--single-step</td>
+<td>Prompts to continue or cancel after every SQL query</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>--single-line</td>
+<td>Specifies that the Enter key defines the end of a SQL query instead of a semicolon</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>--tuples-only</td>
+<td>Disables column headers and footers in table output</td>
+</tr>
+<tr>
+<td>-U</td>
+<td>--username</td>
+<td>Uses the specified username to connect to the PostgreSQL server</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>--variable</td>
+<td>Sets the specified variable to a specified value</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>--version</td>
+<td>Displays the psql version number and exits</td>
+</tr>
+<tr>
+<td>-W</td>
+<td>--password</td>
+<td>Forces a password prompt</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>--expanded</td>
+<td>Enables expanded table output to display additional information for records</td>
+</tr>
+<tr>
+<td>-X</td>
+<td>--nopsqlrc</td>
+<td>Doesn't process the psql startup file</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>--field-separator-zero</td>
+<td>Sets the field separator to zero bytes</td>
+</tr>
+<tr>
+<td>-?</td>
+<td>--help</td>
+<td>Displays the psql command line help and exits</td>
+</tr>
+</tbody>
+</table>
+<h3 id="postgresql-commands">Postgresql commands</h3>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\l</td>
+<td>Lists all available databases</td>
+</tr>
+<tr>
+<td>\c</td>
+<td>connect to database</td>
+</tr>
+<tr>
+<td>\dt</td>
+<td>list the tables in the database</td>
+</tr>
+<tr>
+<td>\du</td>
+<td>list postgresql users</td>
+</tr>
+<tr>
+<td>\z</td>
+<td>List table privileges</td>
+</tr>
+<tr>
+<td>\?</td>
+<td>List all vailable meta commands</td>
+</tr>
+<tr>
+<td>\h</td>
+<td>list all avilable SQL commands</td>
+</tr>
+<tr>
+<td>\q</td>
+<td>Exit the database</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-shell">sudo --login -u postgres
+psql
+
+CREATE DATABASE name;
+\l
+\c name
+</code></pre>
+<h3 id="create-user">Create user</h3>
+<pre><code class="language-shell">CREATE ROLE rich LOGIN;
+</code></pre>
+<h2 id="mysql">MySQL</h2>
+<p>Fastest storage engine and de facto for web applications</p>
+<h2 id="mariadb">MariaDB</h2>
+<p>Having a commerical database company in charge of an opensource database project scared many people in the open-source community intro</p>
+<h3 id="install-mariadb">Install Mariadb</h3>
+<pre><code class="language-shell">sudo apt install mariadb-server
+systemctl status mariadb
+
+sudo dnf install mariadb-server
+systemctl enable mariadb
+</code></pre>
+<h3 id="mysql-command-line-parameters">Mysql command-line parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Short Parameter</th>
+<th>Long Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-?</td>
+<td>--help</td>
+<td>Displays help information</td>
+</tr>
+<tr>
+<td></td>
+<td>--abort-source-on-error</td>
+<td>Aborts source operations in case of errors</td>
+</tr>
+<tr>
+<td></td>
+<td>--auto-rehash</td>
+<td>Enables automatic rehashing</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>--no-auto-rehash</td>
+<td>Disables automatic rehashing</td>
+</tr>
+<tr>
+<td>-b</td>
+<td>--no-beep</td>
+<td>Disables beep on errors</td>
+</tr>
+<tr>
+<td>-B</td>
+<td>--batch</td>
+<td>Doesn't use a history file</td>
+</tr>
+<tr>
+<td></td>
+<td>--binary-as-hex</td>
+<td>Prints binary data as hex</td>
+</tr>
+<tr>
+<td></td>
+<td>--character-sets-dir=name</td>
+<td>Displays column type information</td>
+</tr>
+<tr>
+<td></td>
+<td>--column-type-info</td>
+<td>Displays column type information</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>--comments</td>
+<td>Preserves comments</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>--compress</td>
+<td>Compresses all information sent between the client and the server</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>--debug</td>
+<td>Runs a non-debug version, catches any errors, and exits</td>
+</tr>
+<tr>
+<td></td>
+<td>--debug-check</td>
+<td>Checks memory and opens file usage at exit</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>--debug-info</td>
+<td>Displays debug information at exit</td>
+</tr>
+<tr>
+<td>-D</td>
+<td>--database=name</td>
+<td>Specifies the database to use</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>--execute=name</td>
+<td>Executes the specified statement and exits</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>--vertical</td>
+<td>Displays query output vertically, one data field per line</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>--force</td>
+<td>Continues if a SQL error occurs</td>
+</tr>
+<tr>
+<td>-G</td>
+<td>--named-commands</td>
+<td>Enables named mysql commands</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>--host=name</td>
+<td>Specifies the MariaDB server hostname (the default is localhost)</td>
+</tr>
+<tr>
+<td>-H</td>
+<td>--html</td>
+<td>Displays query output in HTML code</td>
+</tr>
+<tr>
+<td>-I</td>
+<td>--ignore-spaces</td>
+<td>Ignores spaces after function names</td>
+</tr>
+<tr>
+<td></td>
+<td>--init-command=name</td>
+<td>SQL coommand to execute when connecting to the server</td>
+</tr>
+<tr>
+<td></td>
+<td>--line-numbers</td>
+<td>Displays line numbers for errors</td>
+</tr>
+<tr>
+<td></td>
+<td>--local-infile</td>
+<td>Enables/disables the LOAD DATa LOCAL INFILE feature</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>--skip-line-numbers</td>
+<td>Doesn't display line numbers for errors</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>--unbuffered</td>
+<td>Flushes the buffer after each query</td>
+</tr>
+<tr>
+<td>-N</td>
+<td>--skip-column-names</td>
+<td>Doesn't display column names in results</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>--one-database</td>
+<td>ignores statements except those for one default database named on the command line</td>
+</tr>
+<tr>
+<td></td>
+<td>--pager</td>
+<td>Uses pager to display results</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>--password</td>
+<td>Prompts for the password for the user account</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>--port=#</td>
+<td>Specifies the TCP port number to use for the network connection</td>
+</tr>
+<tr>
+<td></td>
+<td>--progress-reports</td>
+<td>Gets progress reports for long-running commands</td>
+</tr>
+<tr>
+<td></td>
+<td>--prompt=name</td>
+<td>Sets the command-line prompt</td>
+</tr>
+<tr>
+<td></td>
+<td>--protocol=name</td>
+<td>Sets the protocol to use for the connection (tcp, socket, or pipe)</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>--quick</td>
+<td>Doesn't cache each query result</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>--raw</td>
+<td>Displays column values without escape conversion</td>
+</tr>
+<tr>
+<td></td>
+<td>--reconnect</td>
+<td>Reconnects if the connection is lost</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>--silent</td>
+<td>Uses silent mode</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>--socket=name</td>
+<td>Specifies a socket for connection to the localhost</td>
+</tr>
+<tr>
+<td></td>
+<td>--ssl</td>
+<td>Enables SSL for the connection</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>--tale</td>
+<td>Displays output in table form</td>
+</tr>
+<tr>
+<td></td>
+<td>--tee=name</td>
+<td>Appends output to the specified file</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>--user=name</td>
+<td>Specifies the user account to log in as</td>
+</tr>
+<tr>
+<td>-U</td>
+<td>--safe-updates</td>
+<td>Allows only UPDATE and DELETE statements that specify key values</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>--verose</td>
+<td>Uses Verbose mode</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>--wait</td>
+<td>If the connection can't be established, waits and retries</td>
+</tr>
+<tr>
+<td>-X</td>
+<td>--xml</td>
+<td>Displays query output in XHTML code</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mysql-commands">Mysql Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Shortcut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?</td>
+<td>\?</td>
+<td>Accesses help</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>\c</td>
+<td>Clears the command</td>
+</tr>
+<tr>
+<td>connect</td>
+<td>\r</td>
+<td>Connects to the database and server</td>
+</tr>
+<tr>
+<td>delimiter</td>
+<td>\d</td>
+<td>Sets a SQL statement delimiter</td>
+</tr>
+<tr>
+<td>edit</td>
+<td>\e</td>
+<td>Edits the command with the command-line editor</td>
+</tr>
+<tr>
+<td>ego</td>
+<td>\G</td>
+<td>Sends the command to the MariaDB server and displays the results vertically</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>\q</td>
+<td>Exits from the mysql program</td>
+</tr>
+<tr>
+<td>go</td>
+<td>\g</td>
+<td>Sends the command to the MariaDB server</td>
+</tr>
+<tr>
+<td>help</td>
+<td>\h</td>
+<td>Displays help</td>
+</tr>
+<tr>
+<td>nopager</td>
+<td>\n</td>
+<td>Disables the output pager and sends the output to STDOUT</td>
+</tr>
+<tr>
+<td>notee</td>
+<td>\t</td>
+<td>Doesn't send output to the output file</td>
+</tr>
+<tr>
+<td>pager</td>
+<td>\P</td>
+<td>Sets the pager command to the specified program (used more as default)</td>
+</tr>
+<tr>
+<td>print</td>
+<td>\p</td>
+<td>Prints the current command</td>
+</tr>
+<tr>
+<td>prompt</td>
+<td>\R</td>
+<td>Changes the mysql command prompt</td>
+</tr>
+<tr>
+<td>quit</td>
+<td>\q</td>
+<td>Quits from the mysql program (same as exit)</td>
+</tr>
+<tr>
+<td>rehash</td>
+<td>#</td>
+<td>Rebuilds the command completion hash table</td>
+</tr>
+<tr>
+<td>source</td>
+<td>\ .</td>
+<td>Executes the SQL script in the specified file</td>
+</tr>
+<tr>
+<td>status</td>
+<td>\s</td>
+<td>Retrieves status information from the MariaDB server</td>
+</tr>
+<tr>
+<td>system</td>
+<td>!</td>
+<td>Executes a shell command on the system</td>
+</tr>
+<tr>
+<td>tee</td>
+<td>\T</td>
+<td>Appends all output to the specified file</td>
+</tr>
+<tr>
+<td>use</td>
+<td>\u</td>
+<td>Uses another database</td>
+</tr>
+<tr>
+<td>charset</td>
+<td>\C</td>
+<td>Changes to another character set</td>
+</tr>
+<tr>
+<td>warnings</td>
+<td>\W</td>
+<td>Shows warnings after every statement</td>
+</tr>
+<tr>
+<td>nowarning</td>
+<td>\w</td>
+<td>Doens't show warnings after every statement</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-shell">SHOW DATABSES;
+SHOW TABLES;
+CREATE DATABASE name;
+USE name;
+SHOW TABLES;
+</code></pre>
+<h3 id="mysql-users">MYSQL Users</h3>
+<pre><code class="language-shell">GRANT SELECT,INSERT,DELETE,UPDATE ON test.* TO rich IDENTIFIED BY 'test';
+</code></pre>
+<h2 id="mongodb">MongoDB</h2>
+<p>NoSQL doesn't create tables but instead stores data as invididual documents. Stores data as individual JSON elements making each data document indepdent of the others</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../GeneralLinux/vimcommands/" class="btn btn-neutral float-left" title="VIM editor commands"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../fileservers/" class="btn btn-neutral float-right" title="File Servers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../GeneralLinux/vimcommands/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../fileservers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
