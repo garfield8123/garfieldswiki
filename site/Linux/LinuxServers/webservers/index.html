@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Webserver - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Webserver";
+        var mkdocs_page_input_path = "Linux/LinuxServers/webservers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../GeneralLinux/vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >LinuxServers</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Webserver</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#apache">Apache</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#apache2ctl-utility-commands">Apache2ctl utility commands</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#apache-file-structure">Apache File Structure</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#common-apache-configuration-directives">Common Apache Configuration Directives</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#apache-logs">Apache Logs</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#userdir-filename">UserDir filename</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nginx">nginX</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#install-nginx">Install nginx</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#start-nginx">Start nginx</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#configuring-nginx">Configuring nginx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lighthttpd">lighthttpd</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#securing-internet-services">Securing Internet services</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Linux</li>
+          <li class="breadcrumb-item">LinuxServers</li>
+      <li class="breadcrumb-item active">Webserver</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="webserver">Webserver</h1>
+<p>Different webservers</p>
+<ul>
+<li><a href="#apache">Apache</a></li>
+<li><a href="#nginx">nginX</a></li>
+<li><a href="#lighthttpd">lighthttpd</a></li>
+</ul>
+<h2 id="apache">Apache</h2>
+<p>Most popular web server</p>
+<h3 id="apache2ctl-utility-commands">Apache2ctl utility commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start</td>
+<td>Starts the Apache Server</td>
+</tr>
+<tr>
+<td>stop</td>
+<td>Stops the Apache Server, terminating any active connections</td>
+</tr>
+<tr>
+<td>restart</td>
+<td>Restarts the Apache server, closing any existing connections</td>
+</tr>
+<tr>
+<td>fullstatus</td>
+<td>Displays a full status report from the Apache Server</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Displays a short status report from the Apache server</td>
+</tr>
+<tr>
+<td>graceful</td>
+<td>Restarts the Apache Server, but existing connections are not terminated</td>
+</tr>
+<tr>
+<td>graceful-stop</td>
+<td>Stops the Apache server, but existing connections are not terminated</td>
+</tr>
+<tr>
+<td>configtest</td>
+<td>Parses the configuration files and reports any syntax errors</td>
+</tr>
+<tr>
+<td>help</td>
+<td>Displays the list of commands</td>
+</tr>
+</tbody>
+</table>
+<h3 id="apache-file-structure">Apache File Structure</h3>
+<ul>
+<li>/etc/apache/apache.conf: Apache 1.3.x installation for Ubuntu systems</li>
+<li>/etc/apache2/apache2.conf: Apache2 installation for Ubuntu systems</li>
+<li>/etc/httpd/conf/httpd.conf: Apache 1.3.x and 2.x installation for Red hat Systems</li>
+</ul>
+<h3 id="configuration">Configuration</h3>
+<pre><code class="language-txt">DocumentRoot &quot;/var/www/html&quot;
+
+&lt;IfDefine variable&gt; 
+Directive
+&lt;/IfDefine&gt;
+
+&lt;Directory /var/www/html/mydata&gt;
+Directive
+&lt;/Directory&gt;
+
+UserDir public_html
+
+NameVirtualHost 192.168.1.77
+&lt;VirtualHost 192.168.1.77&gt;
+ServerName www.myhost1.com
+DocumentRoot /var/www/html/host1
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost 192.168.1.77&gt;
+ServerName www.myhost2.com
+DocumentRoot /var/www/html/host2
+&lt;/VirtualHost&gt;
+
+Listen 192.168.1.77:80
+Listen 192.168.1.78:80
+&lt;VirtualHost 192.168.1.77&gt;
+ServerName www.myhost1.com
+DocumentRoot /var/www/html/myhost1
+&lt;/VirtualHost&gt;
+&lt;VirtualHost 192.168.1.78&gt;
+ServerName www.myhost2.com
+DocumentRoot /var/www/html/myhost2
+&lt;/VirtualHost&gt;
+
+Listen 443
+SSLEngine On
+SSLCertificateFile /etc/apache2/certs/mycert.pem
+SSLCertificateKeyFile /etc/apache2/certs/myserver.key
+</code></pre>
+<h3 id="common-apache-configuration-directives">Common Apache Configuration Directives</h3>
+<table>
+<thead>
+<tr>
+<th>Directive</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Listen</td>
+<td>The TCP port (and optional IP address) to listen for client requests</td>
+</tr>
+<tr>
+<td>User</td>
+<td>The user account used to start the Apache server daemon</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>The group account used to start the Apache server daemon</td>
+</tr>
+<tr>
+<td>ServerAdmin</td>
+<td>Email address of the server administrator</td>
+</tr>
+<tr>
+<td>ServerName</td>
+<td>The domain name of the server</td>
+</tr>
+<tr>
+<td>ServerRoot</td>
+<td>The location of the base configuration files</td>
+</tr>
+<tr>
+<td>DocumentRoot</td>
+<td>The location of the default data directory</td>
+</tr>
+<tr>
+<td>DirectoryIndex</td>
+<td>The default file served when a client requests an index of a directory</td>
+</tr>
+<tr>
+<td>ErrorDocument</td>
+<td>The file to serve when a specific error type occurs</td>
+</tr>
+<tr>
+<td>ErrorLog</td>
+<td>The log file location to use for logging error messages</td>
+</tr>
+<tr>
+<td>LogFormat</td>
+<td>The format of each log file entry</td>
+</tr>
+<tr>
+<td>AccessFileName</td>
+<td>The file that lists restrictions on we page files in a directory</td>
+</tr>
+<tr>
+<td>Include</td>
+<td>Includes configuration settings defined in an external file</td>
+</tr>
+<tr>
+<td>StartServers</td>
+<td>The number of servers to start to handle concurrent requests</td>
+</tr>
+<tr>
+<td>MaxClients</td>
+<td>The maximum num number of servers to handle concurrent requests</td>
+</tr>
+<tr>
+<td>MinSpareServers</td>
+<td>The minimum number of extra servers to have running</td>
+</tr>
+<tr>
+<td>MaxSpareServers</td>
+<td>The maximum number of extra servers to have running</td>
+</tr>
+<tr>
+<td>LoadModule</td>
+<td>Load and enable the specified feature module into the server</td>
+</tr>
+</tbody>
+</table>
+<h3 id="apache-logs">Apache Logs</h3>
+<ul>
+<li>/var/log/apache2/error.log -&gt; Ubuntu</li>
+<li>/var/log/httpd/error.log -&gt; Red Hat</li>
+</ul>
+<h3 id="userdir-filename">UserDir filename</h3>
+<ul>
+<li>UserDir public_html -&gt; http: //localhost/~rich/test .html</li>
+</ul>
+<h2 id="nginx">nginX</h2>
+<p>Advanced replacement of apache, improving on performance and providing some additional features</p>
+<h3 id="install-nginx">Install nginx</h3>
+<ul>
+<li>Debian</li>
+</ul>
+<pre><code class="language-shell">sudo apt-get instal nginx 
+</code></pre>
+<ul>
+<li>Red Hat</li>
+</ul>
+<pre><code class="language-shell">sudo dnf install nginx
+</code></pre>
+<h3 id="start-nginx">Start nginx</h3>
+<pre><code class="language-shell">sudo systemctl start nginx
+sudo systemctl enable nginx
+</code></pre>
+<h3 id="configuring-nginx">Configuring nginx</h3>
+<ul>
+<li>/etc/nginx/sites-enables/default file</li>
+</ul>
+<pre><code class="language-txt">server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    root /usr/share/nginxhtml;
+
+    include /etc/nginx/default.d/*.conf;
+    location / {
+
+    }
+
+    error_page 404 /404.html;
+    location = /40x.html {
+
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+
+    }
+}
+</code></pre>
+<h2 id="lighthttpd">lighthttpd</h2>
+<p>Low memory usage and low cpu usage, making it ideal for smaller server applications</p>
+<h2 id="securing-internet-services">Securing Internet services</h2>
+<ul>
+<li>inetd:</li>
+<li>xinetd:</li>
+<li>/etc/init.d</li>
+</ul>
+<pre><code class="language-shell">update-rc.d -f samba remove 
+invoke-rc.d samba stop 
+
+/etc/init.d/inetd restart
+
+ls /etc/xinetd.d
+/etc/init.d/xinetd restart
+
+ls /etc/init.d
+sudo systemctl stop smb
+/etc/init.d/smb stop
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../mailservers/" class="btn btn-neutral float-left" title="Mail Servers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Scripts/stressdrives/" class="btn btn-neutral float-right" title="Stress drives">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mailservers/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../Scripts/stressdrives/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

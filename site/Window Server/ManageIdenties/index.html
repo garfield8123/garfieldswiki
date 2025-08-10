@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Create, Configure, and manage identies - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Create, Configure, and manage identies";
+        var mkdocs_page_input_path = "Window Server/ManageIdenties.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >GeneralLinux</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxprogramming/">linux programming</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/GeneralLinux/vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/LinuxServers/webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Linux/Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Create, Configure, and manage identies</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#users">Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-new-user-entra-id">Create new user Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-security-in-entra-id">Create security in ENtra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assign-license-to-group">Assign License to group</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#restore-or-remove-recently-deleted-user-microsoft-entra-id">Restore or remove recently deleted user Microsoft Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remove-user-microsoft-entra-id">Remove user Microsoft Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#restore-deleted-user">Restore deleted user</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-configure-and-manage-groups">Create, Configure, and manage groups</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#membership-types">Membership types</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-microsoft-365-group-in-entra-id">Create Microsoft 365 group in Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configure-and-manage-device-registration">Configure and manage device registration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-registered-terms">Microsoft Entra registered terms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-joined-terms">Microsoft Entra joined terms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hybrid-microsoft-entra-terms">Hybrid Microsoft Entra terms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#device-writeback">Device writeback</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-licenses">Microsoft Entra Licenses</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#change-group-license-assignments">Change group license assignments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#not-enough-licenses">Not enough licenses</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#service-plans-that-conflict">Service plans that conflict</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#products-depend-on-license">Products depend on license</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#location-isnt-allowed">Location isn't allowed</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microsoft-entra-mail-and-proxyaddress-attribute">Microsoft Entra Mail and ProxyAddress attribute</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#licenseassignmentattributeconcurrencyexception-in-audit-logs">LicenseAssignmentAttributeConcurrencyException in audit logs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multiple-licenses">Multiple licenses</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#licensed-group-deletion">Licensed group deletion</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#license-with-prerequise">License with prerequise</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#force-group-license-process-to-resolve-errors">Force group license process to resolve errors</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#force-user-license-process-to-resolve-users">Force user license process to resolve users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#migrate-users-with-individual-licenese-to-group-license">Migrate users with individual licenese to group license</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#recommend-migration-process">Recommend migration process</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#change-licenese-assignments-for-a-user-or-group-in-entra-id">change licenese assignments for a user or group in Entra ID</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#custom-security-attribute">Custom Security Attribute</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#system-for-cross-domain-identity-management-scim-automatic-user-creation">System for Cross-Domain Identity Management (SCIM) Automatic user creation</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Window Server</li>
+      <li class="breadcrumb-item active">Create, Configure, and manage identies</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="create-configure-and-manage-identies">Create, Configure, and manage identies</h1>
+<h2 id="users">Users</h2>
+<ul>
+<li>Cloud identities: These users exist only in Microsoft Entra ID. Examples are administrator accounts and users that you manage yourself. Their source is Microsoft Entra ID or External Microsoft Entra directory if the user is defined in another Microsoft Entra instance but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they're deleted.</li>
+<li>Directory-synchronized identities: These users exist in an on-premises Active Directory. A synchronization activity that occurs via Microsoft Entra Connect brings these users in to Azure. Their source is Windows Server AD.</li>
+<li>Guest users: These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts such as an Xbox LIVE account. Their source is Invited user. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.</li>
+</ul>
+<h2 id="create-new-user-entra-id">Create new user Entra ID</h2>
+<ul>
+<li>Microsoft Entra Admin Center -&gt; Users -&gt; All users -&gt; New User -&gt; Create new user -&gt; fill out User principal name (ChrisG), Name (Chris Green), First Name (Chris), Last Name (Green), Password (Make Unique password)</li>
+</ul>
+<h2 id="create-security-in-entra-id">Create security in ENtra ID</h2>
+<ul>
+<li>Microsoft Entra Admin Center -&gt; Identity -&gt; Groups -&gt; All Groups -&gt; new group -&gt; Fill out group type (Security), Group Name (Marketing), Membership Type (Assigned), Owners (Assign administrator account as the group owner), Members (Chris Green)</li>
+</ul>
+<h2 id="assign-license-to-group">Assign License to group</h2>
+<ul>
+<li>All groups -&gt; Marketing -&gt; Manage -&gt; Licenses -&gt; open new tab -&gt; Microsoft 365 admin center <a href="https://admin.microsoft.com">Admin Center</a> -&gt; Billing -&gt; Licenses -&gt; Select One -&gt; Select Groups -&gt; Assign License -&gt; Assign button</li>
+</ul>
+<h2 id="restore-or-remove-recently-deleted-user-microsoft-entra-id">Restore or remove recently deleted user Microsoft Entra ID</h2>
+<p>After you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored, along with all its properties. After that 30-day window passes, the permanent deletion process is automatically started.</p>
+<ul>
+<li>Global administrator</li>
+<li>Partner Tier-1 Support</li>
+<li>Partner Tier-2 Support</li>
+<li>User administrator</li>
+</ul>
+<h2 id="remove-user-microsoft-entra-id">Remove user Microsoft Entra ID</h2>
+<ul>
+<li>Micrsoft Entra Admin Center -&gt; Identity -&gt; Users -&gt; Select check box of user -&gt; Delete User</li>
+</ul>
+<h2 id="restore-deleted-user">Restore deleted user</h2>
+<ul>
+<li>Users page -&gt; Deleted users -&gt; Select user deleted -&gt; restore user -&gt; ok -&gt; All users</li>
+</ul>
+<h2 id="create-configure-and-manage-groups">Create, Configure, and manage groups</h2>
+<ul>
+<li>Security groups: the most common type of groups and are used to manage member and computer access to shared resources for a group of users. For example, you can create a security group for a specific security policy. By doing it this way, you can give a set of permissions to all the members at once, instead of having to add permissions to each member individually. This option requires a Microsoft Entra administrator.</li>
+<li>Microsoft 365 groups: provide collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more. This option also lets you give people outside of your organization access to the group. This option is available to users as well as admins.</li>
+</ul>
+<h2 id="membership-types">Membership types</h2>
+<ul>
+<li>Assigned: members are added and maintained manually.</li>
+<li>Dynamic: members are added based on rules, creating a Dynamic Group. These groups are still either a security group or Microsoft 365 group, just their members are controlled by rule.</li>
+</ul>
+<h2 id="create-microsoft-365-group-in-entra-id">Create Microsoft 365 group in Entra ID</h2>
+<ul>
+<li>Identity page in Microsoft Entra Admin Center -&gt; Groups -&gt; New Group -&gt; Create group with information group type (Microsoft 365), Group Name (Northwest Sales), Membership type (Assigned), Owners (Administrator account as group owner), Members (member of group)</li>
+</ul>
+<h2 id="configure-and-manage-device-registration">Configure and manage device registration</h2>
+<ul>
+<li>Bring Your Own Device (BYOD)</li>
+<li>Allow end users to be productive wherever and whenever and on any device</li>
+<li>Protect the organization's assets</li>
+</ul>
+<h2 id="microsoft-entra-registered-terms">Microsoft Entra registered terms</h2>
+<ul>
+<li>Definition: Registered to Microsoft Entra ID without requiring organizational account to sign in to the device</li>
+<li>Primary audience: Applicable to Bring your own device (BYOD), and Mobile devices</li>
+<li>Device ownership: User or Organization</li>
+<li>Operating systems: Windows 10, Windows 11, iOS, Android, and macOS</li>
+<li>Device sign in options: End-user local credentials, Password, Windows Hello, PIN Biometrics</li>
+<li>Device management: Mobile Device Management (example: Microsoft Intune)</li>
+<li>Key capabilities: SSO to cloud resources, Conditional Access</li>
+</ul>
+<h2 id="microsoft-entra-joined-terms">Microsoft Entra joined terms</h2>
+<ul>
+<li>Definition: Joined only to Microsoft Entra ID requiring organizational account to sign in to the device</li>
+<li>Primary audience: Suitable for both cloud-only and hybrid organizations</li>
+<li>Device ownership: Organization</li>
+<li>Operating systems: All Windows 10 &amp; 11 devices except Windows 10/11 Home</li>
+<li>Device management: Mobile Device Management (example: Microsoft Intune)</li>
+<li>Key capabilities: SSO to both cloud and on-premises resources, Conditional Access, Self-service Password Reset and Windows Hello PIN reset</li>
+</ul>
+<h2 id="hybrid-microsoft-entra-terms">Hybrid Microsoft Entra terms</h2>
+<ul>
+<li>Definition: Joined to on-premises AD and Microsoft Entra ID requiring organizational account to sign in to the device</li>
+<li>Primary audience: Suitable for hybrid organizations with existing on-premises AD infrastructure</li>
+<li>Device ownership: Organization</li>
+<li>Operating systems: Windows 11, 10, 8.1 and 7, along with Windows Server 2008/R2, 2012/R2, 2016 and 2019</li>
+<li>Device sign in options: Password or Windows Hello for Business</li>
+<li>Device management: Group Policy, Configuration Manager standalone or co-management with Microsoft Intune</li>
+<li>
+<p>Key capabilities: SSO to both cloud and on-premises resources, Conditional Access, Self-service Password Reset and Windows Hello PIN reset</p>
+<p>You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
+You want to continue to use Group Policy to manage device configuration.
+You want to continue to use existing imaging solutions to deploy and configure devices.
+You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.</p>
+</li>
+</ul>
+<h2 id="device-writeback">Device writeback</h2>
+<p>Scenario: You have an application that you want to give access to users only if they are coming from registered devices.</p>
+<p>Cloud: You can write Conditional Access policies for any Microsoft Entra integrated applications to authorize based on whether the device is joined to Microsoft Entra ID or not.</p>
+<p>On-premises: This is not possible without device writeback. If the application is integrated with ADFS (2012 or higher) then you can write claim rules to check for the device status and then provide access only if the "is managed " claim is present. In order to issue this claim, ADFS will check for the device object in the "Registered Devices" container and then issue the claim accordingly.</p>
+<p>Windows Hello For Business (WHFB) requires device writeback to function in Hybrid and Federated scenarios.</p>
+<h2 id="microsoft-entra-licenses">Microsoft Entra Licenses</h2>
+<ul>
+<li>group based licenses</li>
+<li>Paid or trial subscription for Microsoft Entra ID Premium P1 and above</li>
+<li>
+<p>Paid or trial edition of Office 365 Enterprise E3 or Office 365 A3 or Office 365 GCC G3 or Office 365 E3 for GCCH or Office 365 E3 for DOD and above</p>
+</li>
+<li>
+<p>Features</p>
+</li>
+<li>Licenses can be assigned to any security group in Microsoft Entra ID. Security groups can be synced from on-premises, by using Microsoft Entra Connect. You can also create security groups directly in Microsoft Entra ID (also called cloud-only groups), or automatically via the Microsoft Entra dynamic group feature.</li>
+<li>When a product license is assigned to a group, the administrator can disable one or more service plans in the product. Typically, this assignment is done when the organization is not yet ready to start using a service included in a product. For example, the administrator might assign Microsoft 365 to a department, but temporarily disable the Yammer service.</li>
+<li>All Microsoft cloud services that require user-level licensing are supported. This support includes all Microsoft 365 products, Enterprise Mobility + Security, and Dynamics 365.</li>
+<li>Group-based licensing is currently available only through the Azure portal. (coming soon to the Microsoft Entra admin center)</li>
+<li>Microsoft Entra ID automatically manages license modifications that result from group membership changes. Typically, license modifications are effective within minutes of a membership change.</li>
+<li>A user can be a member of multiple groups with license policies specified. A user can also have some licenses that were directly assigned, outside of any groups. The resulting user state is a combination of all assigned product and service licenses. If a user is assigned same license from multiple sources, the license will be consumed only once.</li>
+<li>In some cases, licenses cannot be assigned to a user. For example, there might not be enough available licenses in the tenant, or conflicting services might have been assigned at the same time. Administrators have access to information about users for whom Microsoft Entra ID could not fully process group licenses. They can then take corrective action based on that information.</li>
+</ul>
+<h2 id="change-group-license-assignments">Change group license assignments</h2>
+<ul>
+<li>Microsoft Entra Admin <a href="https://entra.microsoft.com">center</a> -&gt; Groups -&gt; All Groups -&gt; Manage -&gt; Licenses</li>
+<li>
+<p>Assignments -&gt; Microsoft Admin <a href="https://admin.microsoft.com">center</a> -&gt; Billing -&gt; Licenses -&gt; select license -&gt; Groups -&gt; Assign License</p>
+</li>
+<li>
+<p>Set-MgUserLicense: there might be an insufficient number of licenses or a conflict between two service plans that can't be assigned at the same time</p>
+</li>
+</ul>
+<h2 id="not-enough-licenses">Not enough licenses</h2>
+<p>Problem: There aren't enough available licenses for one of the products that's specified in the group. You need to either purchase more licenses for the product or free up unused licenses from other users or groups.</p>
+<ul>
+<li>See how many license: Microsoft Entra -&gt; Identity -&gt; Billing -&gt; License -&gt; All Products</li>
+</ul>
+<p>Licensed users: you see a list of all users who have had licenses assigned directly or via one or more groups.
+Licensed groups: you see all groups with product licenses assigned.</p>
+<p>PowerShell cmdlets report this error as CountViolation.</p>
+<h2 id="service-plans-that-conflict">Service plans that conflict</h2>
+<p>Problem: One of the products that's specified in the group contains a service plan that conflicts with another service plan that's already assigned to the user via a different product. Some service plans are configured in a way that they can't be assigned to the same user as another, related service plan.</p>
+<p>A user has a license for Office 365 Enterprise E1 assigned directly, with all the plans enabled. The user has been added to a group that has the Office 365 Enterprise E3 product assigned to it. The E3 product contains service plans that can't overlap with the plans that are included in E1, so the group license assignment fails with the Conflicting service plans error. In this example, the conflicting service plans are:</p>
+<pre><code>SharePoint Online (Plan 2) conflicts with SharePoint Online (Plan 1).
+Exchange Online (Plan 2) conflicts with Exchange Online (Plan 1).
+</code></pre>
+<p>To solve this conflict, you need to disable two of the plans. You can disable the E1 license that's directly assigned to the user. Or, you need to modify the entire group license assignment and disable the plans in the E3 license. Alternatively, you might decide to remove the E1 license from the user if it's redundant in the context of the E3 license.</p>
+<p>PowerShell cmdlets report this error as MutuallyExclusiveViolation</p>
+<h2 id="products-depend-on-license">Products depend on license</h2>
+<p>Problem: One of the products that's specified in the group contains a service plan that must be enabled for another service plan, in another product, to function. This error occurs when Microsoft Entra ID attempts to remove the underlying service plan. For example, this can happen when you remove the user from the group.</p>
+<p>To solve this problem, you need to make sure that the required plan is still assigned to users through some other method or that the dependent services are disabled for those users. After doing that, you can properly remove the group license from those users.</p>
+<p>PowerShell cmdlets report this error as DependencyViolation.</p>
+<h2 id="location-isnt-allowed">Location isn't allowed</h2>
+<p>Problem: Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign a license to a user, you must specify the Usage location property for the user. You can specify the location under the User, then Profile, then Edit the section in the Azure portal.</p>
+<p>When Microsoft Entra ID attempts to assign a group license to a user whose usage location isn't supported, it fails and records an error on the user.</p>
+<p>To solve this problem, remove users from unsupported locations from the licensed group. Alternatively, if the current usage location values don't represent the actual user location, you can modify them so that the licenses are correctly assigned next time (if the new location is supported).</p>
+<p>PowerShell cmdlets report this error as ProhibitedInUsageLocationViolation.</p>
+<h2 id="microsoft-entra-mail-and-proxyaddress-attribute">Microsoft Entra Mail and ProxyAddress attribute</h2>
+<p>Problem: While updating license assignment on a user or a group, you might see that the Microsoft Entra Mail and ProxyAddresses attribute of some users are changed.</p>
+<p>Updating license assignment on a user causes the proxy address calculation to be triggered, which can change user attributes.</p>
+<h2 id="licenseassignmentattributeconcurrencyexception-in-audit-logs">LicenseAssignmentAttributeConcurrencyException in audit logs</h2>
+<p>Problem: User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of the same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Microsoft Entra ID will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.</p>
+<h2 id="multiple-licenses">Multiple licenses</h2>
+<p>Microsoft Entra ID attempts to assign all licenses that are specified in the group to each user. If Microsoft Entra ID can't assign one of the products because of business logic problems, it won't assign the other licenses in the group either. An example is if there aren't enough licenses for all, or if there are conflicts with other services that are enabled on the user.</p>
+<h2 id="licensed-group-deletion">Licensed group deletion</h2>
+<p>Must remove all licenses before deletion of group</p>
+<h2 id="license-with-prerequise">License with prerequise</h2>
+<p>Microsoft Workplace Analytics is an add-on product. It contains a single service plan with the same name. We can only assign this service plan to a user, or group, when one of the following prerequisites is also assigned:</p>
+<pre><code>Exchange Online (Plan 1)
+Exchange Online (Plan 2)
+</code></pre>
+<p>If we try to assign this product on its own to a group, the portal returns a notification message. If we select the item details, it shows the following error message:</p>
+<p>License operation failed. Make sure that the group has necessary services before adding or removing a dependent service. The service Microsoft Workplace Analytics requires Exchange Online (Plan 2) to be enabled as well.</p>
+<p>To assign this add-on license to a group, we must ensure that the group also contains the prerequisite service plan. For example, we might update an existing group that already contains the full Office 365 E3 product, and then add the add-on product to it.</p>
+<p>It is also possible to create a standalone group that contains only the minimum required products to make the add-on work. It can then be used to license only selected users for the add-on product. Based on the previous example, you would assign the following products to the same group:</p>
+<pre><code>Office 365 Enterprise E3 with only the Exchange Online (Plan 2) service plan enabled
+Microsoft Workplace Analytics
+</code></pre>
+<p>From now on, any users added to this group consume one license of the E3 product and one license of the Workplace Analytics product. At the same time, those users can be members of another group that gives them the full E3 product, and they still consume only one license for that product.</p>
+<h2 id="force-group-license-process-to-resolve-errors">Force group license process to resolve errors</h2>
+<p>For example, if you free up some licenses by removing direct license assignments from users, you need to trigger the processing of groups that previously failed to fully license all user members. To reprocess a group, go to the group pane, open Licenses, and then select the Reprocess button on the toolbar.</p>
+<h2 id="force-user-license-process-to-resolve-users">Force user license process to resolve users</h2>
+<p>For example, after you resolve duplicate proxy address problem for an affected user, you need to trigger the processing of the user. To reprocess a user, go to the user pane, open Licenses, and then select the Reprocess button on the toolbar.</p>
+<h2 id="migrate-users-with-individual-licenese-to-group-license">Migrate users with individual licenese to group license</h2>
+<h3 id="recommend-migration-process">Recommend migration process</h3>
+<ol>
+<li>
+<p>You have existing automation (for example, PowerShell) managing license assignment and removal for users. Leave it running as is.</p>
+</li>
+<li>
+<p>Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.</p>
+</li>
+<li>
+<p>Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.</p>
+</li>
+<li>
+<p>Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.</p>
+</li>
+<li>You can perform a random check of a few individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.</li>
+<li>You can run a PowerShell script to verify how licenses are assigned to users.</li>
+<li>
+<p>When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.</p>
+</li>
+<li>
+<p>Verify that no license assignments failed by checking each group for users in error state.</p>
+</li>
+</ol>
+<p>Consider removing the original direct assignments. We recommend that you do it gradually, and monitor the outcome on a subset of users first. If you leave the original direct assignments on users, when the users leave their licensed groups they retain the directly assigned licenses, which might not be what you want.</p>
+<h2 id="change-licenese-assignments-for-a-user-or-group-in-entra-id">change licenese assignments for a user or group in Entra ID</h2>
+<ul>
+<li>Users have the current license plan that's assigned to a group and inherited by the user and not assigned directly.</li>
+<li>You have enough available licenses for the license plan you're assigning. If you don't have enough licenses, some users might not be assigned the new license plan. You can check the number of available licenses.</li>
+<li>Always confirm users don't have assigned service licenses that can conflict with the desired license or prevent removal of the current license. For example, a license from a service such as Workplace Analytics or Project Online that has a dependency on other services.</li>
+<li>If you manage groups on-premises and sync them into Microsoft Entra ID via Microsoft Entra Connect, then you add or remove users by using your on-premises system. It can take some time for the changes to sync with Microsoft Entra ID to be picked up by group licensing.</li>
+<li>If you're using Microsoft Entra dynamic group memberships, you add or remove users by changing their attributes, but the update process for license assignments remains the same.</li>
+</ul>
+<h2 id="custom-security-attribute">Custom Security Attribute</h2>
+<p>Custom security attributes in Microsoft Entra ID are business-specific attributes (key-value pairs) that you can define and assign to Microsoft Entra objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources.</p>
+<ul>
+<li>Why use custom security attributes</li>
+<li>Extend user profiles, such as add Employee Hire Date and Hourly Salary to all my employees.</li>
+<li>Ensure only administrators can see the Hourly Salary attribute in my employees' profiles.</li>
+<li>Categorize hundreds or thousands of applications to easily create a filterable inventory for auditing</li>
+<li>Grant users access to the Azure Storage blobs belonging to a project.</li>
+<li>What to do with custom security attributes</li>
+<li>Define business-specific information (attributes) for your tenant.</li>
+<li>Add a set of custom security attributes on users, applications, Microsoft Entra resources, or Azure resources.</li>
+<li>Manage Microsoft Entra objects using custom security attributes with queries and filters.</li>
+<li>Provide attribute governance so attributes determine who can get access.</li>
+<li>Custom security features</li>
+<li>Available tenant-wide</li>
+<li>Include a description</li>
+<li>Support different data types: Boolean, integer, string</li>
+<li>Support single value or multiple values</li>
+<li>Support user-defined free-form values or predefined values</li>
+<li>Assign custom security attributes to directory synced users from an on-premises Active Directory</li>
+</ul>
+<h2 id="system-for-cross-domain-identity-management-scim-automatic-user-creation">System for Cross-Domain Identity Management (SCIM) Automatic user creation</h2>
+<ul>
+<li>HCM system: Applications and technologies that enable Human Capital Management process and practices that support and automate HR processes throughout the employee lifecycle.</li>
+<li>Microsoft Entra Provisioning Service: Uses the SCIM 2.0 protocol for automatic provisioning. The service connects to the SCIM endpoint for the application, and uses the SCIM user object schema and REST APIs to automate provisioning and de-provisioning of users and groups.</li>
+<li>Microsoft Entra ID: User repository used to manage the lifecycle of identities and their entitlements.</li>
+<li>Target system: Application or system that has SCIM endpoint and works with the Microsoft Entra provisioning to enable automatic provisioning of users and groups.</li>
+</ul>
+<p>System for Cross-Domain Identity Management (SCIM) is an open standard protocol for automating the exchange of user identity information between identity domains and IT systems. SCIM ensures that employees added to the Human Capital Management (HCM) system automatically have accounts created in Microsoft Entra ID or Windows Server Active Directory. User attributes and profiles are synchronized between the two systems, updating removing users based on the user status or role change.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../IdentityMicrosoftentra/" class="btn btn-neutral float-left" title="Microsoft Entra Identity"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Windows/drivers/" class="btn btn-neutral float-right" title="Window Drivers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../IdentityMicrosoftentra/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../Windows/drivers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

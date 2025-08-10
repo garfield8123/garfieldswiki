@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>linux programming - Garfield's Personal Wiki</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "linux programming";
+        var mkdocs_page_input_path = "Linux/GeneralLinux/linuxprogramming.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Garfield's Personal Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home Lab Network Topology</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CTF</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/">CTFWriteups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Forensics/">Forensics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/Resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../CTF/template/">CTF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Overthewire</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/overthewire/bandit/">Bandit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Bandit</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level10-level11/">Level 11</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level11-level12/">Level 12</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level12-level13/">Level 13</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level13-level14/">Level 14</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level14-level15/">Level 15</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level15-level16/">Level 16</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level16-level17/">Level 17</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level17-level18/">Level 18</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level18-level19/">Level 19</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level19-level20/">Level 20</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level20-level21/">Level 21</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level21-level22/">Level 22</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level22-level23/">Level 23</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level23-level24/">Level 24</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level24-level25/">Level 25</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level25-level26/">Level 26</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level26-level27/">Level 27</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level27-level28/">Level 28</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level28-level29/">Level 29</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/bandit/level29-level30/">Level 30</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Leviathan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/leviathan/level0-level1/">Level 1</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Natas</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0/">Level 0</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level0-level1/">Level 1</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level1-level2/">Level 2</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level2-level3/">Level 3</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level3-level4/">Level 4</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level4-level5/">Level 5</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level5-level6/">Level 6</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level6-level7/">Level 7</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level7-level8/">Level 8</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level8-level9/">Level 9</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level9-level10/">Level 10</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../CTF/overthewire/Natas/level10-level11/">Level 11</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >picoCTF</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFCryptography/">Pico Practice GYM Cryptography</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFGeneralSkills/">Pico Practice GYM General Category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/picoCTF/CTFWebExploit/">CTFWebExploit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TryHackme</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/advent_of_code_2023/">Advent of Code 2023</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../CTF/TryHackme/stealthcopter%20ctf%20primer/">Stealthcoper CTF</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Device Management</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Device%20Management/MDM/">Mobile Device Management</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/directoryscan/">Find all directories in website</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/exploit/">Exploit tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Hack/infogather/">Information gathering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Web Application</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/">Web Application Training (Port Swinger)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/apitesting/">API Testing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/pathtraversal/">Path Traversal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/webllm/">Web Large Language Models</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Hack/Web%20Application/websockets/">Websocket</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >GeneralLinux</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../kernelboot/">Kernel Parameters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../LinuxOS/">Linux OS Setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Linuxuserenvironment/">Linux User Environment</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxboot/">Linux boot methods</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxcommand/">Linux Commands</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxdirectory/">Linux Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxnetworkconfig/">Linux Network Configuration Files</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">linux programming</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#common-gcc-options">Common GCC Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#predefined-variables-in-gnu-make">Predefined variables in GNU Make</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gnu-make-options">GNU Make Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#common-gdb-commangs">Common GDB Commangs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#etcinitd-autorun-program">/etc/init.d autorun program</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxschedule/">Linux Scheduling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxsecurity/">Linux security</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../linuxshell/">Linux shell scripting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vimcommands/">VIM editor commands</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >LinuxServers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/database/">Database Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/fileservers/">File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/mailservers/">Mail Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LinuxServers/webservers/">Webserver</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Scripts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/stressdrives/">Stress drives</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Scripts/zfsinstall/">ZFS Installation</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/protocols/">Ports &amp; Protocols</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Networking/vpnserver/">VPN Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/cyberkillchain/">Cyber Kill Chain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DefensiveSecurity/">Defensive Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Goverance%26Regulation/">Goverance and Regulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/securityprinciples/">Security Principles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualization</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Virtualization/vmserver/">VM Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Window Server</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ActiveDirectory/">Active Directory</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ConfigureMicrosoftEntraID/">Configure Microsoft Entra ID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/IdentityMicrosoftentra/">Microsoft Entra Identity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Window%20Server/ManageIdenties/">Create, Configure, and manage identies</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/drivers/">Window Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/sshserver/">Enable SSH Server</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Windows/stresstesting/">Stress Testing Windows</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Garfield's Personal Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Linux</li>
+          <li class="breadcrumb-item">GeneralLinux</li>
+      <li class="breadcrumb-item active">linux programming</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linux-programming">linux programming</h1>
+<h2 id="common-gcc-options">Common GCC Options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-ansi</td>
+<td>Supports only ANSI-standard C syntax (This option disables some GNU C-specific features, such as the __asm__\ and __type__\ of keywords) when used with g++, supports only ISO standard C++</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>Compiles and generates only the object file</td>
+</tr>
+<tr>
+<td>-DMACRO</td>
+<td>Defines the macro with the string "1" as its value</td>
+</tr>
+<tr>
+<td>-DMACRO=DEFN</td>
+<td>Defines the macro as DEFN, where DEFN is some text string</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>Runs only the C preprocessor</td>
+</tr>
+<tr>
+<td>-fallow-single-precision</td>
+<td>Performs all math operations in single precision</td>
+</tr>
+<tr>
+<td>-fpcc-struct-return</td>
+<td>Returns all struct and union values in memory, rather than in registers (Returning values this way is less efficient, but at least its compatible with other compilers)</td>
+</tr>
+<tr>
+<td>-fPIC</td>
+<td>Generates position-independent Code (PIC) suitable for use in a shared library</td>
+</tr>
+<tr>
+<td>-freg-struct-return</td>
+<td>When possible, returns struct and union values registers</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>Generates debugging information (The GNU debugger can use this information)</td>
+</tr>
+<tr>
+<td>-I DIRECTORY</td>
+<td>Searches the specified directory for files that you include by using the #include preprocessor directive</td>
+</tr>
+<tr>
+<td>-L DIRECTORY</td>
+<td>Searches the specified directory for libraries</td>
+</tr>
+<tr>
+<td>-l LIBRARY</td>
+<td>Searches the specified library when linking</td>
+</tr>
+<tr>
+<td>-o FILE</td>
+<td>Generates the specified output file (used to designate the name of an executable file)</td>
+</tr>
+<tr>
+<td>-00 (two zeros)</td>
+<td>Doesn't optimize</td>
+</tr>
+<tr>
+<td>-O or -O1 (letter O)</td>
+<td>Opitmizes the generated code</td>
+</tr>
+<tr>
+<td>-O2</td>
+<td>Optimizes more than those done for -O</td>
+</tr>
+<tr>
+<td>-O3</td>
+<td>Performs optimizations even eyond those done for -O2</td>
+</tr>
+<tr>
+<td>-Os</td>
+<td>Opitmizes the size (to reduce the total amount of code)</td>
+</tr>
+<tr>
+<td>-pedantic</td>
+<td>Generates errors if any non-ANSI-standard exntensions are used</td>
+</tr>
+<tr>
+<td>-pg</td>
+<td>Adds extra code to the program so that, when run, this program generates information that the gprof program can use to display timing details for various parts of the program</td>
+</tr>
+<tr>
+<td>-shared</td>
+<td>Generates a shared object file (typically used to create a shared library)</td>
+</tr>
+<tr>
+<td>-UMACRO</td>
+<td>Undefines the specified macros</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>Displays the GCC version number</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>Doesn't generate warning messages</td>
+</tr>
+<tr>
+<td>-w1, OPTIOn</td>
+<td>Passes the OPTION string (containing multiple comma-separated options) to the linker. To create a shared library named libxxx.so.1, for example, use the following flag: w1,-soname,libXXX.so.1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="predefined-variables-in-gnu-make">Predefined variables in GNU Make</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$%</td>
+<td>Member name for targets that are archives. If the target is libDisp.a (image.o), $% is image.o</td>
+</tr>
+<tr>
+<td>$*</td>
+<td>Name of the target file without the extension</td>
+</tr>
+<tr>
+<td>$+</td>
+<td>Names of all dependent files with duplicate dependencies, listed in their order of occurrence</td>
+</tr>
+<tr>
+<td>$&lt;</td>
+<td>The name of the first dependent file</td>
+</tr>
+<tr>
+<td>$?</td>
+<td>names of all dependent files (with spaces between the names) that are newer than the target</td>
+</tr>
+<tr>
+<td>$@</td>
+<td>Complete name of the target. if the target is liDisp.a (image.o) for example $@ is libDisp.a</td>
+</tr>
+<tr>
+<td>$^</td>
+<td>Names of all dependent files, with spaces between the names. Duplicates are removed from the dependent filenames</td>
+</tr>
+<tr>
+<td>AR</td>
+<td>Name of archive-maintaining program (default value: ar)</td>
+</tr>
+<tr>
+<td>ARFLAGS</td>
+<td>Flags for the archive-maintaining program (default value: rv)</td>
+</tr>
+<tr>
+<td>AS</td>
+<td>Name of the assembler program that converts the assembly langauge to oject code (default value: as)</td>
+</tr>
+<tr>
+<td>ASFLAGS</td>
+<td>Flags for the assembler</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>Name of the C compiler (default value: cc)</td>
+</tr>
+<tr>
+<td>CFLAGS</td>
+<td>Flags that are passed to the C compiler</td>
+</tr>
+<tr>
+<td>CO</td>
+<td>Name of the program that extracts a file from RCS (default value: co)</td>
+</tr>
+<tr>
+<td>COFLAGS</td>
+<td>Flags for the RCS co program</td>
+</tr>
+<tr>
+<td>CPP</td>
+<td>Name of the C preprocessor (default value: $(CC) -E)</td>
+</tr>
+<tr>
+<td>CPPFLAGS</td>
+<td>Flags for the C Preprocessor</td>
+</tr>
+<tr>
+<td>CXX</td>
+<td>Name of the C++ Compilier (Default value: g++)</td>
+</tr>
+<tr>
+<td>CXXFLAGS</td>
+<td>Flags that are passed to the C++ Compilier</td>
+</tr>
+<tr>
+<td>FC</td>
+<td>Name of the FORTRAN compiler (default value: f77)</td>
+</tr>
+<tr>
+<td>FFLAGS</td>
+<td>Flags for the FORTRAN compilier</td>
+</tr>
+<tr>
+<td>LDFLAGS</td>
+<td>Flags for the compilier when its supposed to invoke the linker ld</td>
+</tr>
+<tr>
+<td>RM</td>
+<td>Name of the command to delete a file (default value rm -f)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gnu-make-options">GNU Make Options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-b</td>
+<td>ignores the variable given but accepts that variable for compatibility with other version of make</td>
+</tr>
+<tr>
+<td>-C DIR</td>
+<td>Changes to the specified directory before reading the makefile</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>prints debugging information</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>Allows environment variables to override definitions of similarly named variables in the makefile</td>
+</tr>
+<tr>
+<td>-f FILE</td>
+<td>Reads FILE as the makefile</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>Displays the list of make options</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>Ignores all errors in commands executed when building a target</td>
+</tr>
+<tr>
+<td>-I DIR</td>
+<td>Searches the specified directory for included makefiles (The capability to include a file in a makefile is unique to GNU make)</td>
+</tr>
+<tr>
+<td>-j NUM</td>
+<td>Specifies the number of jobs that make can run simulatenously</td>
+</tr>
+<tr>
+<td>-k</td>
+<td>Continues to build unrelated targets, even if an error occurs when building one of the targets</td>
+</tr>
+<tr>
+<td>-l LOAD</td>
+<td>Doesn't start a new job if load average is at least LOAD (A floating point number)</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>Ignores the variable given but accepts that variable for compatibility with other versions of make</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>Prints the commands to execute but does not execute them</td>
+</tr>
+<tr>
+<td>-o FILE</td>
+<td>Does not rebuild the file named FILE, even if it is older than its dependents</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>Displays the make database of variables and implicit rules</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>Does not run anything but returns 0 (zero) if all targets are up to date. 1 if anything needs updating, or if an error occurs</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>gets rid of all built-in rules</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>Gets rid of all built-in variables and rules</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>Works silently (Without displaying the commands as they execute)</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>Changes the time stamp of the files</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>Displays the version number of make, icensing information, and a copyright notice</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>Displyas the name of the working directory before and after processing the makefile</td>
+</tr>
+<tr>
+<td>-w FILE</td>
+<td>Assumes that the specified file ahs been modified (used wit -n to see what happens if you modify that file)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="common-gdb-commangs">Common GDB Commangs</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>what it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break NUM</td>
+<td>Sets a breakpoint at the specified line number, NUM</td>
+</tr>
+<tr>
+<td>bt</td>
+<td>Displays a trace of all stack frames (Shows you the sequence of function calls so far)</td>
+</tr>
+<tr>
+<td>clear FILENAME:NUM</td>
+<td>Deletes the breakpoint at a specific line number, NUM, in the source file FILENAME</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>continues running the pogram being debugged</td>
+</tr>
+<tr>
+<td>display EXPR</td>
+<td>Displays the value of an expression, EXPR (consisting of variables defined in the program) each time the program stops</td>
+</tr>
+<tr>
+<td>file FILE</td>
+<td>loads the specified executable file FILE, for debugging</td>
+</tr>
+<tr>
+<td>help NAME</td>
+<td>Displays help on the command named NAME</td>
+</tr>
+<tr>
+<td>info break</td>
+<td>Displays a list of current breakpoints, including information on how many times each breakpoint is reached</td>
+</tr>
+<tr>
+<td>info files</td>
+<td>Displays detailed information about the file being debugged</td>
+</tr>
+<tr>
+<td>info func</td>
+<td>Displays all function names</td>
+</tr>
+<tr>
+<td>info local</td>
+<td>Displays information about local variables of the current function</td>
+</tr>
+<tr>
+<td>info prog</td>
+<td>Displays the execution status of the program being debugged</td>
+</tr>
+<tr>
+<td>info var</td>
+<td>Displays all global and static variable names</td>
+</tr>
+<tr>
+<td>kill</td>
+<td>Ends the program you're debugging</td>
+</tr>
+<tr>
+<td>list</td>
+<td>lists a section of the source code</td>
+</tr>
+<tr>
+<td>make</td>
+<td>Runs the make utility to rebuild the executiable without leaving gdb</td>
+</tr>
+<tr>
+<td>next</td>
+<td>Advanced one line of source code in the current function without stepping into other functions</td>
+</tr>
+<tr>
+<td>print EXPR</td>
+<td>Shows the value of the expression EXPR</td>
+</tr>
+<tr>
+<td>quit</td>
+<td>Quits gdb</td>
+</tr>
+<tr>
+<td>run</td>
+<td>Starts running the currently loaded executable</td>
+</tr>
+<tr>
+<td>set variable VAR=VALUE</td>
+<td>Sets the value fo teh variable VAR to VALUE</td>
+</tr>
+<tr>
+<td>shell CMD</td>
+<td>Executes the shell command CMD without leaving gdb</td>
+</tr>
+<tr>
+<td>step</td>
+<td>Advanced one line in the current function, stepping into other functions if any</td>
+</tr>
+<tr>
+<td>watch VAR</td>
+<td>Shows the value of the variable named VAR whenever the value changes</td>
+</tr>
+<tr>
+<td>where</td>
+<td>Displays the call sequence. Use this command to locate where your program died</td>
+</tr>
+<tr>
+<td>x/F ADDR</td>
+<td>Examines the contents of the memory location at address ADDR in the format specified by the letter F, which can be o (octal), x(hex), d (decimal), u (unsigned decimal), t (binary), f (float), a (address), i (instruction), c (char), or s (string). You can append a letter, indicating the size of data type to the format letter. Size letter are b (byte), h (halfworld, 2bytes), w(word, 4 bytes), and g (giant, 8 bytes). ADDR is the name of a variable or pointer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="etcinitd-autorun-program">/etc/init.d autorun program</h2>
+<ul>
+<li>copy script to /etc/init.d with #!/bin/bash to ensure it runs the bash program</li>
+</ul>
+<pre><code class="language-shell">chkconfig --add myscript 
+chkconfig --level 2345 myscript on 
+chkconfig --list | grep myscript
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../linuxnetworkconfig/" class="btn btn-neutral float-left" title="Linux Network Configuration Files"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../linuxschedule/" class="btn btn-neutral float-right" title="Linux Scheduling">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../linuxnetworkconfig/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../linuxschedule/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
